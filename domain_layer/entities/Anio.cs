@@ -9,6 +9,7 @@ namespace domain_layer.entities
     {
         public Anio()
         {
+            //en GitHub
             AnioMes = new HashSet<AnioMe>();
         }
 
