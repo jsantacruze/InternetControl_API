@@ -9,6 +9,7 @@ namespace domain_layer.entities
     {
         public AnioMe()
         {
+            //En VSCode Local
             EmisionServicioCableIdNavigations = new HashSet<EmisionServicioCable>();
             EmisionServicioCableIds = new HashSet<EmisionServicioCable>();
         }
