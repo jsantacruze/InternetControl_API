@@ -1,0 +1,54 @@
+D:\Programas_Prueba\API_Rest_Estudiantes\data_access\bin\Debug\net5.0\data_access.deps.json
+D:\Programas_Prueba\API_Rest_Estudiantes\data_access\bin\Debug\net5.0\data_access.runtimeconfig.json
+D:\Programas_Prueba\API_Rest_Estudiantes\data_access\bin\Debug\net5.0\data_access.runtimeconfig.dev.json
+D:\Programas_Prueba\API_Rest_Estudiantes\data_access\bin\Debug\net5.0\data_access.dll
+D:\Programas_Prueba\API_Rest_Estudiantes\data_access\bin\Debug\net5.0\ref\data_access.dll
+D:\Programas_Prueba\API_Rest_Estudiantes\data_access\bin\Debug\net5.0\data_access.pdb
+D:\Programas_Prueba\API_Rest_Estudiantes\data_access\bin\Debug\net5.0\domain_layer.dll
+D:\Programas_Prueba\API_Rest_Estudiantes\data_access\bin\Debug\net5.0\domain_layer.pdb
+D:\Programas_Prueba\API_Rest_Estudiantes\data_access\obj\Debug\net5.0\data_access.csproj.AssemblyReference.cache
+D:\Programas_Prueba\API_Rest_Estudiantes\data_access\obj\Debug\net5.0\data_access.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programas_Prueba\API_Rest_Estudiantes\data_access\obj\Debug\net5.0\data_access.AssemblyInfoInputs.cache
+D:\Programas_Prueba\API_Rest_Estudiantes\data_access\obj\Debug\net5.0\data_access.AssemblyInfo.cs
+D:\Programas_Prueba\API_Rest_Estudiantes\data_access\obj\Debug\net5.0\data_access.csproj.CoreCompileInputs.cache
+D:\Programas_Prueba\API_Rest_Estudiantes\data_access\obj\Debug\net5.0\data_access.csproj.CopyComplete
+D:\Programas_Prueba\API_Rest_Estudiantes\data_access\obj\Debug\net5.0\data_access.dll
+D:\Programas_Prueba\API_Rest_Estudiantes\data_access\obj\Debug\net5.0\ref\data_access.dll
+D:\Programas_Prueba\API_Rest_Estudiantes\data_access\obj\Debug\net5.0\data_access.pdb
+D:\Programas_Prueba\API_Rest_Estudiantes\data_access\obj\Debug\net5.0\data_access.genruntimeconfig.cache
+C:\Mis Programas\API_Rest_Base\data_access\bin\Debug\net5.0\data_access.deps.json
+C:\Mis Programas\API_Rest_Base\data_access\bin\Debug\net5.0\data_access.runtimeconfig.json
+C:\Mis Programas\API_Rest_Base\data_access\bin\Debug\net5.0\data_access.runtimeconfig.dev.json
+C:\Mis Programas\API_Rest_Base\data_access\bin\Debug\net5.0\data_access.dll
+C:\Mis Programas\API_Rest_Base\data_access\bin\Debug\net5.0\ref\data_access.dll
+C:\Mis Programas\API_Rest_Base\data_access\bin\Debug\net5.0\data_access.pdb
+C:\Mis Programas\API_Rest_Base\data_access\bin\Debug\net5.0\domain_layer.dll
+C:\Mis Programas\API_Rest_Base\data_access\bin\Debug\net5.0\domain_layer.pdb
+C:\Mis Programas\API_Rest_Base\data_access\obj\Debug\net5.0\data_access.csproj.AssemblyReference.cache
+C:\Mis Programas\API_Rest_Base\data_access\obj\Debug\net5.0\data_access.GeneratedMSBuildEditorConfig.editorconfig
+C:\Mis Programas\API_Rest_Base\data_access\obj\Debug\net5.0\data_access.AssemblyInfoInputs.cache
+C:\Mis Programas\API_Rest_Base\data_access\obj\Debug\net5.0\data_access.AssemblyInfo.cs
+C:\Mis Programas\API_Rest_Base\data_access\obj\Debug\net5.0\data_access.csproj.CoreCompileInputs.cache
+C:\Mis Programas\API_Rest_Base\data_access\obj\Debug\net5.0\data_access.csproj.CopyComplete
+C:\Mis Programas\API_Rest_Base\data_access\obj\Debug\net5.0\data_access.dll
+C:\Mis Programas\API_Rest_Base\data_access\obj\Debug\net5.0\ref\data_access.dll
+C:\Mis Programas\API_Rest_Base\data_access\obj\Debug\net5.0\data_access.pdb
+C:\Mis Programas\API_Rest_Base\data_access\obj\Debug\net5.0\data_access.genruntimeconfig.cache
+C:\Mis Programas\MillenniumConnection\MillenniumConnection_App\MC_API_Rest\data_access\obj\Debug\net5.0\data_access.csproj.AssemblyReference.cache
+C:\Mis Programas\MillenniumConnection\MillenniumConnection_App\MC_API_Rest\data_access\obj\Debug\net5.0\data_access.GeneratedMSBuildEditorConfig.editorconfig
+C:\Mis Programas\MillenniumConnection\MillenniumConnection_App\MC_API_Rest\data_access\obj\Debug\net5.0\data_access.AssemblyInfoInputs.cache
+C:\Mis Programas\MillenniumConnection\MillenniumConnection_App\MC_API_Rest\data_access\obj\Debug\net5.0\data_access.AssemblyInfo.cs
+C:\Mis Programas\MillenniumConnection\MillenniumConnection_App\MC_API_Rest\data_access\obj\Debug\net5.0\data_access.csproj.CoreCompileInputs.cache
+C:\Mis Programas\MillenniumConnection\MillenniumConnection_App\MC_API_Rest\data_access\obj\Debug\net5.0\data_access.dll
+C:\Mis Programas\MillenniumConnection\MillenniumConnection_App\MC_API_Rest\data_access\obj\Debug\net5.0\ref\data_access.dll
+C:\Mis Programas\MillenniumConnection\MillenniumConnection_App\MC_API_Rest\data_access\obj\Debug\net5.0\data_access.pdb
+C:\Mis Programas\MillenniumConnection\MillenniumConnection_App\MC_API_Rest\data_access\bin\Debug\net5.0\data_access.deps.json
+C:\Mis Programas\MillenniumConnection\MillenniumConnection_App\MC_API_Rest\data_access\bin\Debug\net5.0\data_access.runtimeconfig.json
+C:\Mis Programas\MillenniumConnection\MillenniumConnection_App\MC_API_Rest\data_access\bin\Debug\net5.0\data_access.runtimeconfig.dev.json
+C:\Mis Programas\MillenniumConnection\MillenniumConnection_App\MC_API_Rest\data_access\bin\Debug\net5.0\data_access.dll
+C:\Mis Programas\MillenniumConnection\MillenniumConnection_App\MC_API_Rest\data_access\bin\Debug\net5.0\ref\data_access.dll
+C:\Mis Programas\MillenniumConnection\MillenniumConnection_App\MC_API_Rest\data_access\bin\Debug\net5.0\data_access.pdb
+C:\Mis Programas\MillenniumConnection\MillenniumConnection_App\MC_API_Rest\data_access\bin\Debug\net5.0\domain_layer.dll
+C:\Mis Programas\MillenniumConnection\MillenniumConnection_App\MC_API_Rest\data_access\bin\Debug\net5.0\domain_layer.pdb
+C:\Mis Programas\MillenniumConnection\MillenniumConnection_App\MC_API_Rest\data_access\obj\Debug\net5.0\data_access.csproj.CopyComplete
+C:\Mis Programas\MillenniumConnection\MillenniumConnection_App\MC_API_Rest\data_access\obj\Debug\net5.0\data_access.genruntimeconfig.cache

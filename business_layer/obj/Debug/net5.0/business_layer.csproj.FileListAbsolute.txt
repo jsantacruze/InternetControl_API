@@ -1,0 +1,51 @@
+D:\Programas_Prueba\API_Rest_Estudiantes\business_layer\bin\Debug\net5.0\business_layer.deps.json
+D:\Programas_Prueba\API_Rest_Estudiantes\business_layer\bin\Debug\net5.0\business_layer.dll
+D:\Programas_Prueba\API_Rest_Estudiantes\business_layer\bin\Debug\net5.0\ref\business_layer.dll
+D:\Programas_Prueba\API_Rest_Estudiantes\business_layer\bin\Debug\net5.0\business_layer.pdb
+D:\Programas_Prueba\API_Rest_Estudiantes\business_layer\bin\Debug\net5.0\data_access.dll
+D:\Programas_Prueba\API_Rest_Estudiantes\business_layer\bin\Debug\net5.0\domain_layer.dll
+D:\Programas_Prueba\API_Rest_Estudiantes\business_layer\bin\Debug\net5.0\data_access.pdb
+D:\Programas_Prueba\API_Rest_Estudiantes\business_layer\bin\Debug\net5.0\domain_layer.pdb
+D:\Programas_Prueba\API_Rest_Estudiantes\business_layer\obj\Debug\net5.0\business_layer.csproj.AssemblyReference.cache
+D:\Programas_Prueba\API_Rest_Estudiantes\business_layer\obj\Debug\net5.0\business_layer.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programas_Prueba\API_Rest_Estudiantes\business_layer\obj\Debug\net5.0\business_layer.AssemblyInfoInputs.cache
+D:\Programas_Prueba\API_Rest_Estudiantes\business_layer\obj\Debug\net5.0\business_layer.AssemblyInfo.cs
+D:\Programas_Prueba\API_Rest_Estudiantes\business_layer\obj\Debug\net5.0\business_layer.csproj.CoreCompileInputs.cache
+D:\Programas_Prueba\API_Rest_Estudiantes\business_layer\obj\Debug\net5.0\business_layer.csproj.CopyComplete
+D:\Programas_Prueba\API_Rest_Estudiantes\business_layer\obj\Debug\net5.0\business_layer.dll
+D:\Programas_Prueba\API_Rest_Estudiantes\business_layer\obj\Debug\net5.0\ref\business_layer.dll
+D:\Programas_Prueba\API_Rest_Estudiantes\business_layer\obj\Debug\net5.0\business_layer.pdb
+C:\Mis Programas\API_Rest_Base\business_layer\obj\Debug\net5.0\business_layer.csproj.AssemblyReference.cache
+C:\Mis Programas\API_Rest_Base\business_layer\obj\Debug\net5.0\business_layer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Mis Programas\API_Rest_Base\business_layer\obj\Debug\net5.0\business_layer.AssemblyInfoInputs.cache
+C:\Mis Programas\API_Rest_Base\business_layer\obj\Debug\net5.0\business_layer.AssemblyInfo.cs
+C:\Mis Programas\API_Rest_Base\business_layer\obj\Debug\net5.0\business_layer.csproj.CoreCompileInputs.cache
+C:\Mis Programas\API_Rest_Base\business_layer\obj\Debug\net5.0\business_layer.dll
+C:\Mis Programas\API_Rest_Base\business_layer\obj\Debug\net5.0\ref\business_layer.dll
+C:\Mis Programas\API_Rest_Base\business_layer\obj\Debug\net5.0\business_layer.pdb
+C:\Mis Programas\API_Rest_Base\business_layer\bin\Debug\net5.0\business_layer.deps.json
+C:\Mis Programas\API_Rest_Base\business_layer\bin\Debug\net5.0\business_layer.dll
+C:\Mis Programas\API_Rest_Base\business_layer\bin\Debug\net5.0\ref\business_layer.dll
+C:\Mis Programas\API_Rest_Base\business_layer\bin\Debug\net5.0\business_layer.pdb
+C:\Mis Programas\API_Rest_Base\business_layer\bin\Debug\net5.0\data_access.dll
+C:\Mis Programas\API_Rest_Base\business_layer\bin\Debug\net5.0\domain_layer.dll
+C:\Mis Programas\API_Rest_Base\business_layer\bin\Debug\net5.0\data_access.pdb
+C:\Mis Programas\API_Rest_Base\business_layer\bin\Debug\net5.0\domain_layer.pdb
+C:\Mis Programas\API_Rest_Base\business_layer\obj\Debug\net5.0\business_layer.csproj.CopyComplete
+C:\Mis Programas\MillenniumConnection\MillenniumConnection_App\MC_API_Rest\business_layer\obj\Debug\net5.0\business_layer.dll
+C:\Mis Programas\MillenniumConnection\MillenniumConnection_App\MC_API_Rest\business_layer\obj\Debug\net5.0\ref\business_layer.dll
+C:\Mis Programas\MillenniumConnection\MillenniumConnection_App\MC_API_Rest\business_layer\obj\Debug\net5.0\business_layer.pdb
+C:\Mis Programas\MillenniumConnection\MillenniumConnection_App\MC_API_Rest\business_layer\obj\Debug\net5.0\business_layer.csproj.AssemblyReference.cache
+C:\Mis Programas\MillenniumConnection\MillenniumConnection_App\MC_API_Rest\business_layer\obj\Debug\net5.0\business_layer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Mis Programas\MillenniumConnection\MillenniumConnection_App\MC_API_Rest\business_layer\obj\Debug\net5.0\business_layer.AssemblyInfoInputs.cache
+C:\Mis Programas\MillenniumConnection\MillenniumConnection_App\MC_API_Rest\business_layer\obj\Debug\net5.0\business_layer.AssemblyInfo.cs
+C:\Mis Programas\MillenniumConnection\MillenniumConnection_App\MC_API_Rest\business_layer\obj\Debug\net5.0\business_layer.csproj.CoreCompileInputs.cache
+C:\Mis Programas\MillenniumConnection\MillenniumConnection_App\MC_API_Rest\business_layer\bin\Debug\net5.0\business_layer.deps.json
+C:\Mis Programas\MillenniumConnection\MillenniumConnection_App\MC_API_Rest\business_layer\bin\Debug\net5.0\business_layer.dll
+C:\Mis Programas\MillenniumConnection\MillenniumConnection_App\MC_API_Rest\business_layer\bin\Debug\net5.0\ref\business_layer.dll
+C:\Mis Programas\MillenniumConnection\MillenniumConnection_App\MC_API_Rest\business_layer\bin\Debug\net5.0\business_layer.pdb
+C:\Mis Programas\MillenniumConnection\MillenniumConnection_App\MC_API_Rest\business_layer\bin\Debug\net5.0\data_access.dll
+C:\Mis Programas\MillenniumConnection\MillenniumConnection_App\MC_API_Rest\business_layer\bin\Debug\net5.0\domain_layer.dll
+C:\Mis Programas\MillenniumConnection\MillenniumConnection_App\MC_API_Rest\business_layer\bin\Debug\net5.0\data_access.pdb
+C:\Mis Programas\MillenniumConnection\MillenniumConnection_App\MC_API_Rest\business_layer\bin\Debug\net5.0\domain_layer.pdb
+C:\Mis Programas\MillenniumConnection\MillenniumConnection_App\MC_API_Rest\business_layer\obj\Debug\net5.0\business_layer.csproj.CopyComplete
