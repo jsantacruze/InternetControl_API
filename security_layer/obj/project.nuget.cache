@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "F1zsJ1+jC9sCFw/9KgBIT2Y492MjOuyWdl+VbPr3V0FkZvqy22Q6KJeHr/CwXoJ5Fw18bJYTWpI+f6HAHs+lvg==",
+  "dgSpecHash": "n4ZILt2wUpK/ELM5uAEyBuqX9MPV1ofRSHx7TXuM23sOeH1VQMTq1nn+vTdgE2HlRPey5zuhtVTBdbPyPMeoYg==",
   "success": true,
-  "projectFilePath": "C:\\Mis Programas\\MillenniumConnection\\MillenniumConnection_App\\MC_API_Rest\\security_layer\\security_layer.csproj",
+  "projectFilePath": "C:\\Mis Programas\\MillenniumConnection\\MillenniumConnection_App\\MC_API_Rest\\InternetControl_API\\security_layer\\security_layer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jsant\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\jsant\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",

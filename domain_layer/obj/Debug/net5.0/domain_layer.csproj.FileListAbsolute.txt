@@ -34,3 +34,15 @@ C:\Mis Programas\MillenniumConnection\MillenniumConnection_App\MC_API_Rest\domai
 C:\Mis Programas\MillenniumConnection\MillenniumConnection_App\MC_API_Rest\domain_layer\obj\Debug\net5.0\domain_layer.dll
 C:\Mis Programas\MillenniumConnection\MillenniumConnection_App\MC_API_Rest\domain_layer\obj\Debug\net5.0\ref\domain_layer.dll
 C:\Mis Programas\MillenniumConnection\MillenniumConnection_App\MC_API_Rest\domain_layer\obj\Debug\net5.0\domain_layer.pdb
+C:\Mis Programas\MillenniumConnection\MillenniumConnection_App\MC_API_Rest\InternetControl_API\domain_layer\bin\Debug\net5.0\domain_layer.deps.json
+C:\Mis Programas\MillenniumConnection\MillenniumConnection_App\MC_API_Rest\InternetControl_API\domain_layer\bin\Debug\net5.0\domain_layer.dll
+C:\Mis Programas\MillenniumConnection\MillenniumConnection_App\MC_API_Rest\InternetControl_API\domain_layer\bin\Debug\net5.0\ref\domain_layer.dll
+C:\Mis Programas\MillenniumConnection\MillenniumConnection_App\MC_API_Rest\InternetControl_API\domain_layer\bin\Debug\net5.0\domain_layer.pdb
+C:\Mis Programas\MillenniumConnection\MillenniumConnection_App\MC_API_Rest\InternetControl_API\domain_layer\obj\Debug\net5.0\domain_layer.csproj.AssemblyReference.cache
+C:\Mis Programas\MillenniumConnection\MillenniumConnection_App\MC_API_Rest\InternetControl_API\domain_layer\obj\Debug\net5.0\domain_layer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Mis Programas\MillenniumConnection\MillenniumConnection_App\MC_API_Rest\InternetControl_API\domain_layer\obj\Debug\net5.0\domain_layer.AssemblyInfoInputs.cache
+C:\Mis Programas\MillenniumConnection\MillenniumConnection_App\MC_API_Rest\InternetControl_API\domain_layer\obj\Debug\net5.0\domain_layer.AssemblyInfo.cs
+C:\Mis Programas\MillenniumConnection\MillenniumConnection_App\MC_API_Rest\InternetControl_API\domain_layer\obj\Debug\net5.0\domain_layer.csproj.CoreCompileInputs.cache
+C:\Mis Programas\MillenniumConnection\MillenniumConnection_App\MC_API_Rest\InternetControl_API\domain_layer\obj\Debug\net5.0\domain_layer.dll
+C:\Mis Programas\MillenniumConnection\MillenniumConnection_App\MC_API_Rest\InternetControl_API\domain_layer\obj\Debug\net5.0\ref\domain_layer.dll
+C:\Mis Programas\MillenniumConnection\MillenniumConnection_App\MC_API_Rest\InternetControl_API\domain_layer\obj\Debug\net5.0\domain_layer.pdb

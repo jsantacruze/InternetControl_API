@@ -5977,11 +5977,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Mis Programas\\MillenniumConnection\\MillenniumConnection_App\\MC_API_Rest\\data_access\\data_access.csproj",
+      "projectUniqueName": "C:\\Mis Programas\\MillenniumConnection\\MillenniumConnection_App\\MC_API_Rest\\InternetControl_API\\data_access\\data_access.csproj",
       "projectName": "data_access",
-      "projectPath": "C:\\Mis Programas\\MillenniumConnection\\MillenniumConnection_App\\MC_API_Rest\\data_access\\data_access.csproj",
+      "projectPath": "C:\\Mis Programas\\MillenniumConnection\\MillenniumConnection_App\\MC_API_Rest\\InternetControl_API\\data_access\\data_access.csproj",
       "packagesPath": "C:\\Users\\jsant\\.nuget\\packages\\",
-      "outputPath": "C:\\Mis Programas\\MillenniumConnection\\MillenniumConnection_App\\MC_API_Rest\\data_access\\obj\\",
+      "outputPath": "C:\\Mis Programas\\MillenniumConnection\\MillenniumConnection_App\\MC_API_Rest\\InternetControl_API\\data_access\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\jsant\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5998,8 +5998,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Mis Programas\\MillenniumConnection\\MillenniumConnection_App\\MC_API_Rest\\domain_layer\\domain_layer.csproj": {
-              "projectPath": "C:\\Mis Programas\\MillenniumConnection\\MillenniumConnection_App\\MC_API_Rest\\domain_layer\\domain_layer.csproj"
+            "C:\\Mis Programas\\MillenniumConnection\\MillenniumConnection_App\\MC_API_Rest\\InternetControl_API\\domain_layer\\domain_layer.csproj": {
+              "projectPath": "C:\\Mis Programas\\MillenniumConnection\\MillenniumConnection_App\\MC_API_Rest\\InternetControl_API\\domain_layer\\domain_layer.csproj"
             }
           }
         }

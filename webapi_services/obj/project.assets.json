@@ -6046,11 +6046,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Mis Programas\\MillenniumConnection\\MillenniumConnection_App\\MC_API_Rest\\webapi_services\\webapi_services.csproj",
+      "projectUniqueName": "C:\\Mis Programas\\MillenniumConnection\\MillenniumConnection_App\\MC_API_Rest\\InternetControl_API\\webapi_services\\webapi_services.csproj",
       "projectName": "webapi_services",
-      "projectPath": "C:\\Mis Programas\\MillenniumConnection\\MillenniumConnection_App\\MC_API_Rest\\webapi_services\\webapi_services.csproj",
+      "projectPath": "C:\\Mis Programas\\MillenniumConnection\\MillenniumConnection_App\\MC_API_Rest\\InternetControl_API\\webapi_services\\webapi_services.csproj",
       "packagesPath": "C:\\Users\\jsant\\.nuget\\packages\\",
-      "outputPath": "C:\\Mis Programas\\MillenniumConnection\\MillenniumConnection_App\\MC_API_Rest\\webapi_services\\obj\\",
+      "outputPath": "C:\\Mis Programas\\MillenniumConnection\\MillenniumConnection_App\\MC_API_Rest\\InternetControl_API\\webapi_services\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\jsant\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -6067,11 +6067,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Mis Programas\\MillenniumConnection\\MillenniumConnection_App\\MC_API_Rest\\business_layer\\business_layer.csproj": {
-              "projectPath": "C:\\Mis Programas\\MillenniumConnection\\MillenniumConnection_App\\MC_API_Rest\\business_layer\\business_layer.csproj"
+            "C:\\Mis Programas\\MillenniumConnection\\MillenniumConnection_App\\MC_API_Rest\\InternetControl_API\\business_layer\\business_layer.csproj": {
+              "projectPath": "C:\\Mis Programas\\MillenniumConnection\\MillenniumConnection_App\\MC_API_Rest\\InternetControl_API\\business_layer\\business_layer.csproj"
             },
-            "C:\\Mis Programas\\MillenniumConnection\\MillenniumConnection_App\\MC_API_Rest\\security_layer\\security_layer.csproj": {
-              "projectPath": "C:\\Mis Programas\\MillenniumConnection\\MillenniumConnection_App\\MC_API_Rest\\security_layer\\security_layer.csproj"
+            "C:\\Mis Programas\\MillenniumConnection\\MillenniumConnection_App\\MC_API_Rest\\InternetControl_API\\security_layer\\security_layer.csproj": {
+              "projectPath": "C:\\Mis Programas\\MillenniumConnection\\MillenniumConnection_App\\MC_API_Rest\\InternetControl_API\\security_layer\\security_layer.csproj"
             }
           }
         }
