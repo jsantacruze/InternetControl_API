@@ -10,6 +10,7 @@ namespace domain_layer.entities
         public Anio()
         {
             //en GitHub
+            //In VSCode local
             AnioMes = new HashSet<AnioMe>();
         }
 
