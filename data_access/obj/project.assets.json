@@ -5972,34 +5972,32 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\jsant\\.nuget\\packages\\": {}
+    "C:\\Users\\Administrator\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Mis Programas\\MillenniumConnection\\MillenniumConnection_App\\MC_API_Rest\\InternetControl_API\\data_access\\data_access.csproj",
+      "projectUniqueName": "E:\\App\\API\\InternetControl_API\\data_access\\data_access.csproj",
       "projectName": "data_access",
-      "projectPath": "C:\\Mis Programas\\MillenniumConnection\\MillenniumConnection_App\\MC_API_Rest\\InternetControl_API\\data_access\\data_access.csproj",
-      "packagesPath": "C:\\Users\\jsant\\.nuget\\packages\\",
-      "outputPath": "C:\\Mis Programas\\MillenniumConnection\\MillenniumConnection_App\\MC_API_Rest\\InternetControl_API\\data_access\\obj\\",
+      "projectPath": "E:\\App\\API\\InternetControl_API\\data_access\\data_access.csproj",
+      "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+      "outputPath": "E:\\App\\API\\InternetControl_API\\data_access\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\jsant\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://www.nuget.org/api/v2/": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Mis Programas\\MillenniumConnection\\MillenniumConnection_App\\MC_API_Rest\\InternetControl_API\\domain_layer\\domain_layer.csproj": {
-              "projectPath": "C:\\Mis Programas\\MillenniumConnection\\MillenniumConnection_App\\MC_API_Rest\\InternetControl_API\\domain_layer\\domain_layer.csproj"
+            "E:\\App\\API\\InternetControl_API\\domain_layer\\domain_layer.csproj": {
+              "projectPath": "E:\\App\\API\\InternetControl_API\\domain_layer\\domain_layer.csproj"
             }
           }
         }
@@ -6046,7 +6044,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

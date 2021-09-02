@@ -18,7 +18,8 @@ namespace webapi_services
     {
         public static void Main(string[] args)
         {
-            var hostServer = CreateHostBuilder(args).Build();
+            var hostServer = CreateHostBuilder(args)
+            .Build();
             using(var scope = hostServer.Services.CreateScope()){
                 var services = scope.ServiceProvider;
                 try{
