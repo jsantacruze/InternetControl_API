@@ -16,9 +16,14 @@ namespace webapi_services.Controllers
        [HttpGet("{filtro}")]
         public async Task<ActionResult<List<SuscriptorDTO>>> GetByFiltro(string filtro)
         {
-            return await Mediator.Send(new ConsultasHelper.SuscriptorQueryListRequest{Filtro=filtro});
+            return await Mediator.Send(new ConsultasHelper.SuscriptorListByFilterRequest{Filtro=filtro});
+        }
+
+        [HttpGet("list")]
+        public async Task<ActionResult<List<SuscriptorDTO>>> GetAll()
+        {
+            return await Mediator.Send(new ConsultasHelper.SuscriptorQueryListRequest());
         }
         
-
     }
 }
