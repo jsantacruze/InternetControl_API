@@ -1,3 +1,4 @@
+using System;
 namespace business_layer.DTO
 {
     public class EquipoEnlaceClienteDTO
