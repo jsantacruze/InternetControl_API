@@ -10,6 +10,8 @@ namespace business_layer
         public MappingProfile(){
             CreateMap<Suscripcion, SuscripcionDTO>();
             CreateMap<Suscriptor, SuscriptorDTO>();
+            CreateMap<Ciudad,CiudadDTO>();
+            CreateMap<Sexo,SexoDTO>();
         }
     }
 }

@@ -58,3 +58,15 @@ E:\App\API\InternetControl_API\domain_layer\obj\Debug\net5.0\domain_layer.csproj
 E:\App\API\InternetControl_API\domain_layer\obj\Debug\net5.0\domain_layer.dll
 E:\App\API\InternetControl_API\domain_layer\obj\Debug\net5.0\ref\domain_layer.dll
 E:\App\API\InternetControl_API\domain_layer\obj\Debug\net5.0\domain_layer.pdb
+C:\Users\YANDI\Documents\Sistemas\InternetControlAPI\InternetControl_API\domain_layer\bin\Debug\net5.0\domain_layer.deps.json
+C:\Users\YANDI\Documents\Sistemas\InternetControlAPI\InternetControl_API\domain_layer\bin\Debug\net5.0\domain_layer.dll
+C:\Users\YANDI\Documents\Sistemas\InternetControlAPI\InternetControl_API\domain_layer\bin\Debug\net5.0\ref\domain_layer.dll
+C:\Users\YANDI\Documents\Sistemas\InternetControlAPI\InternetControl_API\domain_layer\bin\Debug\net5.0\domain_layer.pdb
+C:\Users\YANDI\Documents\Sistemas\InternetControlAPI\InternetControl_API\domain_layer\obj\Debug\net5.0\domain_layer.csproj.AssemblyReference.cache
+C:\Users\YANDI\Documents\Sistemas\InternetControlAPI\InternetControl_API\domain_layer\obj\Debug\net5.0\domain_layer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\YANDI\Documents\Sistemas\InternetControlAPI\InternetControl_API\domain_layer\obj\Debug\net5.0\domain_layer.AssemblyInfoInputs.cache
+C:\Users\YANDI\Documents\Sistemas\InternetControlAPI\InternetControl_API\domain_layer\obj\Debug\net5.0\domain_layer.AssemblyInfo.cs
+C:\Users\YANDI\Documents\Sistemas\InternetControlAPI\InternetControl_API\domain_layer\obj\Debug\net5.0\domain_layer.csproj.CoreCompileInputs.cache
+C:\Users\YANDI\Documents\Sistemas\InternetControlAPI\InternetControl_API\domain_layer\obj\Debug\net5.0\domain_layer.dll
+C:\Users\YANDI\Documents\Sistemas\InternetControlAPI\InternetControl_API\domain_layer\obj\Debug\net5.0\ref\domain_layer.dll
+C:\Users\YANDI\Documents\Sistemas\InternetControlAPI\InternetControl_API\domain_layer\obj\Debug\net5.0\domain_layer.pdb
