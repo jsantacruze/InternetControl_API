@@ -6211,20 +6211,26 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Administrator\\.nuget\\packages\\": {}
+    "C:\\Users\\ROG\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\App\\API\\InternetControl_API\\security_layer\\security_layer.csproj",
+      "projectUniqueName": "C:\\Users\\ROG\\Documents\\ApiMC\\InternetControl_API\\security_layer\\security_layer.csproj",
       "projectName": "security_layer",
-      "projectPath": "E:\\App\\API\\InternetControl_API\\security_layer\\security_layer.csproj",
-      "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "E:\\App\\API\\InternetControl_API\\security_layer\\obj\\",
+      "projectPath": "C:\\Users\\ROG\\Documents\\ApiMC\\InternetControl_API\\security_layer\\security_layer.csproj",
+      "packagesPath": "C:\\Users\\ROG\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ROG\\Documents\\ApiMC\\InternetControl_API\\security_layer\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "E:\\App\\API\\InternetControl_API\\NuGet.Config",
-        "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\ROG\\Documents\\ApiMC\\InternetControl_API\\NuGet.Config",
+        "C:\\Users\\ROG\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 20.1.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -6236,8 +6242,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "E:\\App\\API\\InternetControl_API\\business_layer\\business_layer.csproj": {
-              "projectPath": "E:\\App\\API\\InternetControl_API\\business_layer\\business_layer.csproj"
+            "C:\\Users\\ROG\\Documents\\ApiMC\\InternetControl_API\\business_layer\\business_layer.csproj": {
+              "projectPath": "C:\\Users\\ROG\\Documents\\ApiMC\\InternetControl_API\\business_layer\\business_layer.csproj"
             }
           }
         }

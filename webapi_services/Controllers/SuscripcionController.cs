@@ -18,7 +18,12 @@ namespace webapi_services.Controllers
         {
             return await Mediator.Send(new ConsultasHelper.SuscripcionQueryListRequest{Filtro=filtro});
         }
-        
+        [Route("updateCoordenadas")]
+        [HttpPut]
+        public async Task<ActionResult<Unit>> Edit(EditHelper.EditCoordenadasSuscripcionRequest request)
+        {
+            return await Mediator.Send(request);
+        }
 
     }
 }
