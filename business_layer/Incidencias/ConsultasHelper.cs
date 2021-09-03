@@ -38,9 +38,10 @@ namespace business_layer.Incidencias
             {
                 var result = await
                 _context.TrackingSuscripcions
-                //.Include(s => s.IdempleadoAsignadoNavigation)
-                //.Include(s=> s.IdusuarioCreaNavigation)
-                //.ThenInclude(u => u.CedulaEmpleadoNavigation)
+                .Include(s => s.Suscripcion)
+                .Include(s => s.IdempleadoAsignadoNavigation)
+                .Include(s=> s.IdusuarioCreaNavigation)
+                .ThenInclude(u => u.CedulaEmpleadoNavigation)
                 .ToListAsync();
                 var incidenciasDTO = _mapper.Map<List<TrackingSuscripcion>, List<IncidenciaDTO>>(result);
                 return incidenciasDTO;
