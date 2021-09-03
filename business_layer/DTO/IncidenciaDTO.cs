@@ -19,8 +19,8 @@ namespace business_layer.DTO
         public string StrIdsucursal { get; set; }
 
         public virtual EmpleadoDTO EmpleadoAsignado { get; set; }
-        /*public virtual UsuarioDTO UsuarioCrea { get; set; }
-        public virtual SuscripcionDTO Suscripcion { get; set; }*/
+        public virtual UsuarioDTO UsuarioCrea { get; set; }
+        public virtual SuscripcionDTO Suscripcion { get; set; }
 
     }
 }
