@@ -13,7 +13,9 @@ namespace business_layer
             CreateMap<Ciudad,CiudadDTO>();
             CreateMap<Sexo,SexoDTO>();
             CreateMap<TrackingSuscripcion, IncidenciaDTO>()
-            .ForMember(destino => destino.incidencia_id, opt => opt.MapFrom(src => src.Idtracking));
+            .ForMember(destino => destino.incidencia_id, opt => opt.MapFrom(src => src.Idtracking))
+            .ForMember(destino => destino.EmpleadoAsignado, opt => opt.MapFrom(src => src.IdempleadoAsignadoNavigation))
+            .ForMember(destino => destino.UsuarioCrea, opt => opt.MapFrom(src => src.IdusuarioCreaNavigation));
         }
     }
 }
