@@ -12,11 +12,13 @@ namespace business_layer
             CreateMap<Suscriptor, SuscriptorDTO>();
             CreateMap<Ciudad,CiudadDTO>();
             CreateMap<Sexo,SexoDTO>();
+            CreateMap<Empleado, EmpleadoDTO>();
+            CreateMap<Usuario, UsuarioDTO>();
             CreateMap<TrackingSuscripcion, IncidenciaDTO>()
-            .ForMember(destino => destino.incidencia_id, opt => opt.MapFrom(src => src.Idtracking));
-            /*.ForMember(destino => destino.EmpleadoAsignado, opt => opt.MapFrom(src => src.IdempleadoAsignadoNavigation))
+            .ForMember(destino => destino.incidencia_id, opt => opt.MapFrom(src => src.Idtracking))
+            .ForMember(destino => destino.EmpleadoAsignado, opt => opt.MapFrom(src => src.IdempleadoAsignadoNavigation))
             .ForMember(destino => destino.UsuarioCrea, opt => opt.MapFrom(src => src.IdusuarioCreaNavigation))
-            .ForMember(destino => destino.Suscripcion, opt => opt.MapFrom(src => src.Suscripcion));*/
+            .ForMember(destino => destino.Suscripcion, opt => opt.MapFrom(src => src.Suscripcion));
         }
     }
 }
