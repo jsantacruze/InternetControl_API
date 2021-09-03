@@ -13,7 +13,8 @@ namespace business_layer
             CreateMap<Ciudad,CiudadDTO>();
             CreateMap<Sexo,SexoDTO>();
             CreateMap<Empleado, EmpleadoDTO>();
-            CreateMap<Usuario, UsuarioDTO>();
+            CreateMap<Usuario, UsuarioDTO>()
+            .ForMember(destino => destino.Empleado, opt => opt.MapFrom(src => src.CedulaEmpleadoNavigation));
             CreateMap<TrackingSuscripcion, IncidenciaDTO>()
             .ForMember(destino => destino.incidencia_id, opt => opt.MapFrom(src => src.Idtracking))
             .ForMember(destino => destino.EmpleadoAsignado, opt => opt.MapFrom(src => src.IdempleadoAsignadoNavigation))
