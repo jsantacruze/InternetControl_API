@@ -13,6 +13,7 @@ namespace business_layer.DTO
         public string StrObservaciones { get; set; }
         public bool BlnActivo { get; set; }
         public string StrIdsucursalPertenece { get; set; }
+        public string NombreCompleto { get; set; }
 
     }
 }
