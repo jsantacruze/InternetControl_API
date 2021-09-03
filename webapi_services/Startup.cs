@@ -28,6 +28,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc.Authorization;
 using webapi_services.ExceptionMiddleware;
 using business_layer.IdentitySecurity;
+using business_layer.Incidencias;
 
 namespace webapi_services
 {
@@ -53,8 +54,8 @@ namespace webapi_services
             services.AddControllers(opt => {
                 var policy = new AuthorizationPolicyBuilder().RequireAuthenticatedUser().Build();
                 opt.Filters.Add(new AuthorizeFilter(policy));
-            });
-           // .AddFluentValidation(cfg => cfg.RegisterValidatorsFromAssemblyContaining<EditHelper>());
+            })
+            .AddFluentValidation(cfg => cfg.RegisterValidatorsFromAssemblyContaining<EditHelper>());
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "webapi_services", Version = "v1" });
