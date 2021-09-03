@@ -6041,25 +6041,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ROG\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\jsant\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ROG\\Documents\\ApiMC\\InternetControl_API\\webapi_services\\webapi_services.csproj",
+      "projectUniqueName": "C:\\Mis Programas\\MillenniumConnection\\MillenniumConnection_App\\MC_API_Rest\\InternetControl_API\\webapi_services\\webapi_services.csproj",
       "projectName": "webapi_services",
-      "projectPath": "C:\\Users\\ROG\\Documents\\ApiMC\\InternetControl_API\\webapi_services\\webapi_services.csproj",
-      "packagesPath": "C:\\Users\\ROG\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ROG\\Documents\\ApiMC\\InternetControl_API\\webapi_services\\obj\\",
+      "projectPath": "C:\\Mis Programas\\MillenniumConnection\\MillenniumConnection_App\\MC_API_Rest\\InternetControl_API\\webapi_services\\webapi_services.csproj",
+      "packagesPath": "C:\\Users\\jsant\\.nuget\\packages\\",
+      "outputPath": "C:\\Mis Programas\\MillenniumConnection\\MillenniumConnection_App\\MC_API_Rest\\InternetControl_API\\webapi_services\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\ROG\\Documents\\ApiMC\\InternetControl_API\\NuGet.Config",
-        "C:\\Users\\ROG\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 20.1.config",
+        "C:\\Mis Programas\\MillenniumConnection\\MillenniumConnection_App\\MC_API_Rest\\InternetControl_API\\NuGet.Config",
+        "C:\\Users\\jsant\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6072,11 +6067,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\ROG\\Documents\\ApiMC\\InternetControl_API\\business_layer\\business_layer.csproj": {
-              "projectPath": "C:\\Users\\ROG\\Documents\\ApiMC\\InternetControl_API\\business_layer\\business_layer.csproj"
+            "C:\\Mis Programas\\MillenniumConnection\\MillenniumConnection_App\\MC_API_Rest\\InternetControl_API\\business_layer\\business_layer.csproj": {
+              "projectPath": "C:\\Mis Programas\\MillenniumConnection\\MillenniumConnection_App\\MC_API_Rest\\InternetControl_API\\business_layer\\business_layer.csproj"
             },
-            "C:\\Users\\ROG\\Documents\\ApiMC\\InternetControl_API\\security_layer\\security_layer.csproj": {
-              "projectPath": "C:\\Users\\ROG\\Documents\\ApiMC\\InternetControl_API\\security_layer\\security_layer.csproj"
+            "C:\\Mis Programas\\MillenniumConnection\\MillenniumConnection_App\\MC_API_Rest\\InternetControl_API\\security_layer\\security_layer.csproj": {
+              "projectPath": "C:\\Mis Programas\\MillenniumConnection\\MillenniumConnection_App\\MC_API_Rest\\InternetControl_API\\security_layer\\security_layer.csproj"
             }
           }
         }
