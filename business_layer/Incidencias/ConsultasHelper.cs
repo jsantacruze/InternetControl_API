@@ -32,7 +32,6 @@ namespace business_layer.Incidencias
                 RuleFor(v => v.opcionBusqueda).NotEmpty().WithMessage("Debe especificar una opción para las fechas de búsqueda. 1: F. Regisro. | 2: F. Atención");
                 RuleFor(v => v.fechaIni).NotEmpty().WithMessage("Se requiere una fecha inicial");
                 RuleFor(v => v.fechaFin).NotEmpty().WithMessage("Se requiere una fecha final");
-                RuleFor(v => v.estado_atendido).NotEmpty().WithMessage("Debe indicar un estado de atención para la incidencia (true/false)");
             }
         }
         public class IncidenciaQueryListHandler : IRequestHandler<IncidenciaQueryListRequest, List<IncidenciaDTO>>
