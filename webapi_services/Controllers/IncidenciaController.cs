@@ -22,6 +22,11 @@ namespace webapi_services.Controllers
             return await Mediator.Send(request);
         }
 
+        [HttpGet("pendientes_empleado")]
+        public async Task<int> GetPendientesByEmpleado(ConsultasHelper.IncidenciasPendientesRequest request)
+        {
+            return await Mediator.Send(request);
+        }
 
     }
 }
