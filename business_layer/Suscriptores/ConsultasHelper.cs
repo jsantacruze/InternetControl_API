@@ -34,6 +34,7 @@ namespace business_layer.Suscriptores
                 _context.Suscriptors
                 .Include(s => s.StrIdciudadNavigation)
                 .Include(s=> s.StrIdsexoNavigation)
+                .Where(s=>s.BlnActivo)
                 .ToListAsync();
                 var suscriptorDTO = _mapper.Map<List<Suscriptor>, List<SuscriptorDTO>>(result);
                 return suscriptorDTO;
@@ -60,7 +61,7 @@ namespace business_layer.Suscriptores
                 _context.Suscriptors
                 .Include(s => s.StrIdciudadNavigation)
                 .Include(s=> s.StrIdsexoNavigation)
-                .Where(s => s.StrNombres.Contains(request.Filtro) || s.StrApellidos.Contains(request.Filtro) || s.StrCedulaRuc.Contains(request.Filtro))
+                 .Where(s => s.StrNombres.Contains(request.Filtro) || s.StrApellidos.Contains(request.Filtro) || s.StrCedulaRuc.Contains(request.Filtro) && s.BlnActivo)
                 .ToListAsync();
                 var suscriptorDTO = _mapper.Map<List<Suscriptor>, List<SuscriptorDTO>>(result);
                 return suscriptorDTO;
