@@ -71,6 +71,32 @@ namespace business_layer.Incidencias
                 return incidenciasDTO;
             }
         }
+        
+        //NUMERO DE INICIDENCIAS POR USUARIO
+        public class IncidenciasPendientesRequest : IRequest<int>
+        {
+            public string cedula_usuario {get; set;}
+            public bool estado_atendido {get; set;}
+        }
+
+        public class IncidenciasPendientesHabnler : IRequestHandler<IncidenciasPendientesRequest, int>
+        {
+            private readonly InternetControlContext _context;
+
+            public IncidenciasPendientesHabnler(InternetControlContext context)
+            {
+                this._context = context;
+            }
+
+            public async Task<int> Handle(IncidenciasPendientesRequest request, CancellationToken cancellationToken)
+            {
+                var result = await
+                    this._context.TrackingSuscripcions
+                    .Where(t => t.Atendido == request.estado_atendido && t.IdempleadoAsignado == request.cedula_usuario).ToListAsync();
+                return result.Count();
+            }
+        }
+
 
     }
 }
