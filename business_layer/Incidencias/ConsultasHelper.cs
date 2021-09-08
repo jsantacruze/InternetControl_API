@@ -17,7 +17,7 @@ namespace business_layer.Incidencias
     {
         public class IncidenciaQueryListRequest : IRequest<List<IncidenciaDTO>>
         {
-            //1> FECHA REGISTRO, 3>FECHA ATENCION
+            //1> FECHA REGISTRO, 2>FECHA ATENCION
             public int opcionBusqueda{get; set;}
            public DateTime fechaIni {get; set;}
            public DateTime fechaFin  {get; set;}
