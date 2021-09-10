@@ -1,13 +1,16 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using business_layer.DTO;
 using business_layer.IdentitySecurity.Contracts;
+using data_access;
 using domain_layer.Security;
 using FluentValidation;
 using MediatR;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 
 namespace business_layer.IdentitySecurity
 {
@@ -28,10 +31,13 @@ namespace business_layer.IdentitySecurity
             private readonly UserManager<User> _userManager;
             private readonly SignInManager<User> _signInManager;
             private readonly IJWTGenerator _iJWTGenerator;
-            public LoginHandler(UserManager<User> userManager, SignInManager<User> signInManager, IJWTGenerator iJWTGenerator){
+            private readonly InternetControlContext _context;
+            public LoginHandler(UserManager<User> userManager, SignInManager<User> signInManager, IJWTGenerator iJWTGenerator,
+             InternetControlContext context){
                 _userManager = userManager;
                 _signInManager = signInManager;
                 _iJWTGenerator = iJWTGenerator;
+                _context = context;
             }
             public async Task<UserDTO> Handle(LoginRequest request, CancellationToken cancellationToken)
             {
@@ -42,14 +48,25 @@ namespace business_layer.IdentitySecurity
                 var result = await _signInManager.CheckPasswordSignInAsync(usuario, request.Password, false);
                 var rolesResult = await _userManager.GetRolesAsync(usuario);
                 var rolesList = new List<String>(rolesResult);
-
+                var empleadoBD = await _context.Empleados.Where(e => e.StrEmail.Equals(request.Email))
+                .FirstOrDefaultAsync();
                 if(result.Succeeded){
                     return new UserDTO{
                         NombreCompleto = usuario.NombreCompleto,
                         Token = _iJWTGenerator.GenerateToken(usuario, rolesList),
                         Email = usuario.Email,
                         UserName = usuario.UserName,
-                        Imagen = null
+                        Imagen = null,
+                        empleado = new EmpleadoDTO{
+                            StrCedulaRuc = empleadoBD.StrCedulaRuc,
+                            StrNombres = empleadoBD.StrNombres,
+                            StrApellidos = empleadoBD.StrApellidos,
+                            StrDireccion = empleadoBD.StrDireccion,
+                            StrTelefono = empleadoBD.StrTelefono,
+                            StrMovil = empleadoBD.StrMovil,
+                            StrEmail = empleadoBD.StrEmail,
+                            BlnActivo = empleadoBD.BlnActivo
+                        }
                     };
                 }
                 throw new Exception("Clave inválida");
