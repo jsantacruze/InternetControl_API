@@ -1,13 +1,16 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using business_layer.DTO;
 using business_layer.IdentitySecurity.Contracts;
+using data_access;
 using domain_layer.Security;
 using FluentValidation;
 using MediatR;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 
 namespace business_layer.IdentitySecurity
 {
@@ -42,7 +45,6 @@ namespace business_layer.IdentitySecurity
                 var result = await _signInManager.CheckPasswordSignInAsync(usuario, request.Password, false);
                 var rolesResult = await _userManager.GetRolesAsync(usuario);
                 var rolesList = new List<String>(rolesResult);
-
                 if(result.Succeeded){
                     return new UserDTO{
                         NombreCompleto = usuario.NombreCompleto,
@@ -64,22 +66,39 @@ namespace business_layer.IdentitySecurity
             private readonly UserManager<User> _userManager;
             private readonly IJWTGenerator _jWTGenerator;
             private readonly ISessionUser _sessionUser;
-            public CurrentUserHandler(UserManager<User> userManager, IJWTGenerator jWTGenerator, ISessionUser sessionUser){
+            private readonly InternetControlContext _context;
+
+            public CurrentUserHandler(UserManager<User> userManager, IJWTGenerator jWTGenerator, ISessionUser sessionUser,
+             InternetControlContext context){
                 _userManager = userManager;
                 _jWTGenerator = jWTGenerator;
                 _sessionUser = sessionUser;
+                _context = context;
             }
             public async Task<UserDTO> Handle(CurrentUserRequest request, CancellationToken cancellationToken)
             {
                 var usuario = await _userManager.FindByNameAsync(_sessionUser.getSessionUser());
                 var rolesResult = await _userManager.GetRolesAsync(usuario);
                 var rolesList = new List<String>(rolesResult);
+                var empleadoBD = await _context.Empleados.Where(e => e.StrEmail.Equals(usuario.Email))
+                .FirstOrDefaultAsync();
+
                 return new UserDTO{
                     NombreCompleto = usuario.NombreCompleto,
                     UserName = usuario.UserName,
                     Token = _jWTGenerator.GenerateToken(usuario, rolesList),
                     Imagen = null,
-                    Email = usuario.Email
+                    Email = usuario.Email,
+                    empleado = new EmpleadoDTO{
+                            StrCedulaRuc = empleadoBD.StrCedulaRuc,
+                            StrNombres = empleadoBD.StrNombres,
+                            StrApellidos = empleadoBD.StrApellidos,
+                            StrDireccion = empleadoBD.StrDireccion,
+                            StrTelefono = empleadoBD.StrTelefono,
+                            StrMovil = empleadoBD.StrMovil,
+                            StrEmail = empleadoBD.StrEmail,
+                            BlnActivo = empleadoBD.BlnActivo
+                    }
                 };
             }
         }
