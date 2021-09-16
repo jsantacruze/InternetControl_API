@@ -32,6 +32,8 @@ namespace business_layer.Suscripciones
                 var suscripcionesList = await 
                 _context.Suscripcions
                 .Include(s => s.CodigoSuscriptorNavigation)
+                .Include(s => s.TrackingSuscripcions)
+                .Include(s => s.ImagenSuscripcions)
                 .Where(s => s.CodigoSuscriptorNavigation.StrNombres.Contains(request.Filtro) 
                 || s.CodigoSuscriptorNavigation.StrApellidos.Contains(request.Filtro))
                 .ToListAsync();
