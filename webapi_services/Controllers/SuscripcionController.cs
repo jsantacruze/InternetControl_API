@@ -32,5 +32,12 @@ namespace webapi_services.Controllers
             return await Mediator.Send(request);
         }
 
+        [Route("updateSuscripcion")]
+        [HttpPut]
+        public async Task<ActionResult<Unit>> updateSuscripcion(EditHelper.EditSuscripcionRequest request)
+        {
+            return await Mediator.Send(request);
+        }
+
     }
 }
