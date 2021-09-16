@@ -50,6 +50,7 @@ namespace business_layer.Incidencias
                 var result = await
                 _context.TrackingSuscripcions
                 .Include(s => s.Suscripcion)
+                .ThenInclude(s => s.CodigoSuscriptorNavigation)
                 .Include(s => s.IdempleadoAsignadoNavigation)
                 .Include(s=> s.IdusuarioCreaNavigation)
                 .ThenInclude(u => u.CedulaEmpleadoNavigation)
