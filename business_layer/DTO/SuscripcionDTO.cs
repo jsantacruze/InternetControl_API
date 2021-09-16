@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 namespace business_layer.DTO
 {
@@ -35,6 +36,7 @@ namespace business_layer.DTO
 
         public SuscriptorDTO CodigoSuscriptorNavigation{get; set;}
         public EquipoEnlaceClienteDTO IdequipoClienteNavigation { get; set; }
-
+        public virtual ICollection<ImagenSuscripcionDTO> ImagenSuscripcions { get; set; }
+        public virtual ICollection<TrackingSuscripcionDTO> TrackingSuscripcions { get; set; }
     }
 }

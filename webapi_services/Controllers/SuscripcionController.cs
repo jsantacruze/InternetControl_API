@@ -25,5 +25,12 @@ namespace webapi_services.Controllers
             return await Mediator.Send(request);
         }
 
+        [Route("insertImages")]
+        [HttpPost]
+        public async Task<ActionResult<Unit>> Edit(EditHelper.AddPhotoSuscripcionRequest request)
+        {
+            return await Mediator.Send(request);
+        }
+
     }
 }
