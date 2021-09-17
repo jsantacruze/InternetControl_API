@@ -8,6 +8,9 @@ namespace business_layer.DTO
         public string ImagenDescripcion { get; set; }
         public byte[] ImagenValue { get; set; }
         public bool ImagenPrincipal { get; set; }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 42b834fe46bcab186671f206fa3d64566afd28f5
     }
 }
