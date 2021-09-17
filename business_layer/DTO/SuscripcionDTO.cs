@@ -36,7 +36,8 @@ namespace business_layer.DTO
 
         public SuscriptorDTO CodigoSuscriptorNavigation{get; set;}
         public EquipoEnlaceClienteDTO IdequipoClienteNavigation { get; set; }
-        public virtual ICollection<ImagenSuscripcionDTO> ImagenSuscripcions { get; set; }
-        public virtual ICollection<TrackingSuscripcionDTO> TrackingSuscripcions { get; set; }
+
+        public List<ImagenSuscripcionDTO> Imagenes { get; set; }
+        public List<TrackingSuscripcionDTO> TrackingSuscripcions { get; set; }
     }
 }

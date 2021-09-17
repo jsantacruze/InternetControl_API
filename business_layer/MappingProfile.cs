@@ -26,6 +26,8 @@ namespace business_layer
             .ForMember(destino => destino.EmpleadoAsignado, opt => opt.MapFrom(src => src.IdempleadoAsignadoNavigation))
             .ForMember(destino => destino.UsuarioCrea, opt => opt.MapFrom(src => src.IdusuarioCreaNavigation))
             .ForMember(destino => destino.Suscripcion, opt => opt.MapFrom(src => src.Suscripcion));
+            CreateMap<TrackingSuscripcion,TrackingSuscripcionDTO>();
+            CreateMap<ImagenSuscripcion,ImagenSuscripcionDTO>();
         }
     }
 }

@@ -8,7 +8,7 @@ namespace business_layer.DTO
         public DateTime FechaRegistro { get; set; }
         public string IdusuarioCrea { get; set; }
         public string IdempleadoAsignado { get; set; }
-        public DateTime? FechaAtencion { get; set; }
+        public DateTime FechaAtencion { get; set; }
         public bool Atendido { get; set; }
         public string Observaciones { get; set; }
         public long DblCodigoSuscripcion { get; set; }
@@ -16,5 +16,7 @@ namespace business_layer.DTO
         public bool RequiereAtencion { get; set; }
 
         public virtual EmpleadoDTO IdempleadoAsignadoNavigation { get; set; }
+        public virtual UsuarioDTO IdusuarioCreaNavigation { get; set; }
+
     }
 }
