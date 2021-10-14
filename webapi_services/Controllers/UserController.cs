@@ -32,6 +32,13 @@ namespace webapi_services.Controllers
             return await Mediator.Send(new LoginHelper.CurrentUserRequest());
         }
 
+        [HttpPost("currentpost")]
+        public async Task<ActionResult<UserDTO>> getCurrentUserPost()
+        {
+            return await Mediator.Send(new LoginHelper.CurrentUserRequest());
+        }
+
+
         [HttpPost("addrole")]
         public async Task<ActionResult<Unit>> AgregarRoleUsuario(UserEditHelper.AddRoleToUserRequest request){
                return await Mediator.Send(request);
