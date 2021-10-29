@@ -254,7 +254,7 @@ namespace business_layer.Suscripciones
         public class EditCoordenadasSuscripcionValidator: AbstractValidator<EditCoordenadasSuscripcionRequest>{
             public  EditCoordenadasSuscripcionValidator()
             {
-                RuleFor(suscripcion => suscripcion.DblCodigoSuscripcion).Null().WithMessage("Error de PK código suscripción");
+                //RuleFor(suscripcion => suscripcion.DblCodigoSuscripcion).Null().WithMessage("Error de PK código suscripción");
                 RuleFor(suscripcion => suscripcion.DblCodigoSuscripcion).NotEmpty().WithMessage("Error de PK código suscripción");
                 RuleFor(suscripcion => suscripcion.StrIdsucursal).NotEmpty().WithMessage("Error de PK id sucursal");
                 RuleFor(suscripcion => suscripcion.Latitud).NotEmpty().WithMessage("El valor de Latitud es requerido");
