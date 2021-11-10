@@ -12,10 +12,11 @@ namespace webapi_services.Controllers
 {
     public class SectorCiudadController: BaseController
     {
-       [HttpGet]
-        public async Task<ActionResult<List<SectorCiudadDTO>>> Get()
+       [Route("filtrar/{filtro}")]
+       [HttpGet("{filtro}")]
+        public async Task<ActionResult<List<SectorCiudadDTO>>> Get(string filtro)
         {
-            return await Mediator.Send(new ConsultasNomencladoresHelper.SectorCiudadQueryListRequest());
+            return await Mediator.Send(new ConsultasNomencladoresHelper.SectorCiudadQueryListRequest{Filtro=filtro});
         }   
         
     }

@@ -62,6 +62,7 @@ namespace business_layer.Suscripciones
 
         //SECTOR CIUDAD
         public class SectorCiudadQueryListRequest: IRequest<List<SectorCiudadDTO>>{
+            public string Filtro {get; set;}
         }
         
         public class SectorCiudadQueryListHandler: IRequestHandler<SectorCiudadQueryListRequest, List<SectorCiudadDTO>>{
@@ -76,6 +77,7 @@ namespace business_layer.Suscripciones
             public async Task<List<SectorCiudadDTO>> Handle(SectorCiudadQueryListRequest request, CancellationToken cancellationToken){
                 var result = await 
                 _context.SectorCiudads
+                .Where(s => s.DescripcionSector.Contains(request.Filtro))
                 .OrderBy(o => o.DescripcionSector)
                 .ToListAsync();
                 var resultDTO = _mapper.Map<List<SectorCiudad>, List<SectorCiudadDTO>>(result);
@@ -85,6 +87,8 @@ namespace business_layer.Suscripciones
 
         //PUNTO DE ACCESO SERVICIO
         public class PuntoAccesoServicioQueryListRequest: IRequest<List<PuntoAccesoServicioDTO>>{
+            public string Filtro {get; set;}
+
         }
         
         public class PuntoAccesoServicioQueryListHandler: IRequestHandler<PuntoAccesoServicioQueryListRequest, List<PuntoAccesoServicioDTO>>{
@@ -99,6 +103,7 @@ namespace business_layer.Suscripciones
             public async Task<List<PuntoAccesoServicioDTO>> Handle(PuntoAccesoServicioQueryListRequest request, CancellationToken cancellationToken){
                 var result = await 
                 _context.PuntoAccesoServicios
+                .Where(s => s.Descripcion.Contains(request.Filtro))
                 .OrderBy(o => o.Descripcion)
                 .ToListAsync();
                 var resultDTO = _mapper.Map<List<PuntoAccesoServicio>, List<PuntoAccesoServicioDTO>>(result);
