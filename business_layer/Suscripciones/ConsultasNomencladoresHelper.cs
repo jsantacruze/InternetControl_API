@@ -77,6 +77,7 @@ namespace business_layer.Suscripciones
             public async Task<List<SectorCiudadDTO>> Handle(SectorCiudadQueryListRequest request, CancellationToken cancellationToken){
                 var result = await 
                 _context.SectorCiudads
+                .Include(s => s.StrIdciudadNavigation)
                 .Where(s => s.DescripcionSector.Contains(request.Filtro))
                 .OrderBy(o => o.DescripcionSector)
                 .ToListAsync();
