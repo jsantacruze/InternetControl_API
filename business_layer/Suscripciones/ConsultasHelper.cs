@@ -34,6 +34,7 @@ namespace business_layer.Suscripciones
                 .Include(s => s.CodigoSuscriptorNavigation)
                 .Include(s => s.TrackingSuscripcions)
                 .Include(s => s.ImagenSuscripcions)
+                .Include(s => s.StrIdsectorNavigation)
                 .Where(s => s.CodigoSuscriptorNavigation.StrNombres.Contains(request.Filtro) 
                 || s.CodigoSuscriptorNavigation.StrApellidos.Contains(request.Filtro))
                 .ToListAsync();
