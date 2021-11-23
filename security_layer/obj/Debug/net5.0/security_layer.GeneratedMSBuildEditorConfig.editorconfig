@@ -7,4 +7,8 @@ build_property.PublishSingleFile =
 build_property.IncludeAllContentForSelfExtract = 
 build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
 build_property.RootNamespace = security_layer
+<<<<<<< HEAD
 build_property.ProjectDir = E:\App\API\InternetControl_API\security_layer\
+=======
+build_property.ProjectDir = C:\Mis Programas\MillenniumConnection\MillenniumConnection_App\MC_API_Rest\InternetControl_API\security_layer\
+>>>>>>> e2f8235fc103f88940cd6e25f601bdbe0a8fc192
