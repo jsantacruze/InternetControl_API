@@ -99,12 +99,13 @@ namespace business_layer.Suscripciones
                     IdpuntoAcceso=request.IdpuntoAcceso,
                     TipoSuscripcionId=request.TipoSuscripcionId
                 };
-                _context.Suscripcions.Add(suscripcion);
+                return Unit.Value;
+                //_context.Suscripcions.Add(suscripcion);
                 
-                var result = await _context.SaveChangesAsync();
-                 if(result > 0){
-                    return Unit.Value;
-                }
+                //var result = await _context.SaveChangesAsync();
+                 //if(result > 0){
+                 //   return Unit.Value;
+                //}
 
                 throw new CustomExceptionHelper(HttpStatusCode.InternalServerError, new {mensaje="No se pudo agregar la suscripción"});
             }
