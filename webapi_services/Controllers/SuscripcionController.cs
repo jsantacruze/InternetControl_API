@@ -13,6 +13,7 @@ namespace webapi_services.Controllers
     public class SuscripcionController: BaseController
     {
         [HttpPost]
+        [Route("add")]
         public async Task<ActionResult<Unit>> Add(EditHelper.AddSuscriptionRequest request)
         {
             return await Mediator.Send(request);
