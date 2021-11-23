@@ -12,6 +12,12 @@ namespace webapi_services.Controllers
 {
     public class SuscripcionController: BaseController
     {
+        [HttpPost]
+        public async Task<ActionResult<Unit>> Add(EditHelper.AddSuscriptionRequest request)
+        {
+            return await Mediator.Send(request);
+        } 
+
        [Route("filtrar/{filtro}")]
        [HttpGet("{filtro}")]
         public async Task<ActionResult<List<SuscripcionDTO>>> GetByFiltro(string filtro)
