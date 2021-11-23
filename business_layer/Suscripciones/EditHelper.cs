@@ -10,11 +10,108 @@ using MediatR;
 using business_layer.ExceptionManager;
 using System.Net;
 using business_layer.DTO;
+using AutoMapper;
+using domain_layer.entities;
 
 namespace business_layer.Suscripciones
 {
     public class EditHelper
     {
+        //ADD SUSCRIPTION
+        public class AddSuscriptionRequest: IRequest
+        {
+            public string StrIdsucursal { get; set; }
+            public int StrIdsector { get; set; }
+            public double CodigoSuscriptor { get; set; }
+            public string StrCedulaUsuarioCreador { get; set; }
+            public int EquiposIncluidos { get; set; }
+            public int EquiposAdicionales { get; set; }
+            public string Observaciones { get; set; }
+            public string IdestadoSuscripcion { get; set; }
+            public byte[] ImgFotoInstalacion { get; set; }
+            public double Latitud { get; set; }
+            public double Longitud { get; set; }
+            public string DireccionSuscripcion { get; set; }
+            public string ReferenciaSuscripcion { get; set; }
+            public string Ipv4 { get; set; }
+            public string Ipv6 { get; set; }
+            public string PasswordCliente { get; set; }
+            public int IdequipoCliente { get; set; }
+            public int? IdpuntoAcceso { get; set; }
+            public int? TipoSuscripcionId { get; set; }
+        }
+
+        public class AddSuscriptionValidator: AbstractValidator<AddSuscriptionRequest>{
+            public AddSuscriptionValidator(){
+                RuleFor(s => s.StrIdsucursal).NotNull().WithMessage("La sucursal es requerida");
+                RuleFor(s => s.StrIdsector).NotNull().WithMessage("El sector es requerido");
+                RuleFor(s => s.CodigoSuscriptor).NotNull().WithMessage("El suscriptor es requerido");
+                RuleFor(s => s.StrCedulaUsuarioCreador).NotNull().WithMessage("El usurio creador es requerido");
+                RuleFor(s => s.EquiposIncluidos).NotNull().WithMessage("El número de equipos incliuidos es requerido");
+                RuleFor(s => s.EquiposAdicionales).NotNull().WithMessage("El número de equipos adicionales es requerido");
+                RuleFor(s => s.IdestadoSuscripcion).NotNull().WithMessage("El estado de la suscripción es requerido");
+                RuleFor(s => s.Latitud).NotNull().WithMessage("La latitud es requerida");
+                RuleFor(s => s.Longitud).NotNull().WithMessage("El longitud es requerida");
+                RuleFor(s => s.DireccionSuscripcion).NotNull().WithMessage("La dirección es requerida");
+                RuleFor(s => s.IdequipoCliente).NotNull().WithMessage("El equipo del cliente es requerido");
+                RuleFor(s => s.IdpuntoAcceso).NotNull().WithMessage("El punto de acceso es requerido");
+                RuleFor(s => s.TipoSuscripcionId).NotNull().WithMessage("El tipo de suscripciómn es requerido");
+            }
+        }
+
+        public class AddSuscriptionHandler : IRequestHandler<AddSuscriptionRequest>
+        {
+            private readonly InternetControlContext _context;
+            
+            private readonly IMapper _mapper;
+
+            public  AddSuscriptionHandler(InternetControlContext context, IMapper mapper){
+                _context = context;
+                _mapper = mapper;
+            }
+
+            public async Task<Unit> Handle(AddSuscriptionRequest request, CancellationToken cancellationToken)
+            {
+                var nextID = _context.Suscripcions.Max(s => s.DblCodigoSuscripcion) + 1;
+                
+                var suscripcion = new Suscripcion{
+                    DblCodigoSuscripcion =nextID,
+                    StrIdsucursal = request.StrIdsucursal,
+                    FechaSuscripcion = DateTime.Now,
+                    StrIdsector = request.StrIdsector,
+                    CodigoSuscriptor = request.CodigoSuscriptor,
+                    Activo = false,
+                    StrCedulaUsuarioCreador = request.StrCedulaUsuarioCreador,
+                    CostoInstalacion = 0,
+                    EquiposIncluidos = request.EquiposIncluidos,
+                    EquiposAdicionales = request.EquiposAdicionales,
+                    ValorMensualEquipos =0, //
+                    ValorMensualAdicionales = 0, //
+                    Observaciones = request.Observaciones,
+                    IdestadoSuscripcion = request.IdestadoSuscripcion,
+                    Latitud = request.Latitud,
+                    Longitud = request.Longitud,
+                    DireccionSuscripcion = request.DireccionSuscripcion,
+                    ReferenciaSuscripcion = request.ReferenciaSuscripcion ?? "",
+                    Ipv4 = request.Ipv4,
+                    Ipv6 = request.Ipv6 ?? "",
+                    IdequipoCliente=request.IdequipoCliente,
+                    IdpuntoAcceso=request.IdpuntoAcceso,
+                    TipoSuscripcionId=request.TipoSuscripcionId
+                };
+                _context.Suscripcions.Add(suscripcion);
+                
+                var result = await _context.SaveChangesAsync();
+                 if(result > 0){
+                    return Unit.Value;
+                }
+
+                throw new CustomExceptionHelper(HttpStatusCode.InternalServerError, new {mensaje="No se pudo agregar la suscripción"});
+            }
+        }
+        
+
+        //ADD TRACKING
         public class AddTrackingSuscripcionSuscripcionRequest : IRequest
         {
            public long Idtracking { get; set; }
@@ -86,6 +183,7 @@ namespace business_layer.Suscripciones
                 throw new Exception("No se guardaron los cambios");
             }
         }
+        //ADD PHOTO
         public class AddPhotoSuscripcionRequest : IRequest
         {
            public long ImagenId { get; set; }
@@ -143,6 +241,7 @@ namespace business_layer.Suscripciones
             }
         }
 
+        //EDIT SUSCRIPTION
         public class EditSuscripcionRequest: IRequest
         {
             public long DblCodigoSuscripcion { get; set; }
@@ -245,6 +344,8 @@ namespace business_layer.Suscripciones
                 throw new Exception("No se guardaron los cambios");
             }
         }
+
+        //EDIT COORDENADAS
         public class EditCoordenadasSuscripcionRequest: IRequest{
             public long DblCodigoSuscripcion { get; set; }
             public string StrIdsucursal { get; set; }
