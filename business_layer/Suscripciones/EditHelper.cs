@@ -99,7 +99,6 @@ namespace business_layer.Suscripciones
                     IdpuntoAcceso=request.IdpuntoAcceso,
                     TipoSuscripcionId=request.TipoSuscripcionId
                 };
-                return Unit.Value;
                 _context.Suscripcions.Add(suscripcion);
                 
                 var result = await _context.SaveChangesAsync();
