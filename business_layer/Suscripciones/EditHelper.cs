@@ -106,7 +106,7 @@ namespace business_layer.Suscripciones
                  if(result > 0){
                     return Unit.Value;
                  }
-                throw new CustomExceptionHelper(HttpStatusCode.NotFound, new {mensaje="No se pudo agregar la suscripción"});
+                throw new Exception("No se pudo agregar la suscripción");
             }
         }
         
