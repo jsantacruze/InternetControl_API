@@ -72,10 +72,10 @@ namespace business_layer.Suscripciones
 
             public async Task<Unit> Handle(AddSuscriptionRequest request, CancellationToken cancellationToken)
             {
-                //var nextID = _context.Suscripcions.Max(s => s.DblCodigoSuscripcion) + 1;
+                var nextID = _context.Suscripcions.Max(s => s.DblCodigoSuscripcion) + 1;
                 
                 var suscripcion = new Suscripcion{
-                    DblCodigoSuscripcion =100000,
+                    DblCodigoSuscripcion =nextID,
                     StrIdsucursal = request.StrIdsucursal,
                     FechaSuscripcion = DateTime.Now,
                     StrIdsector = request.StrIdsector,
