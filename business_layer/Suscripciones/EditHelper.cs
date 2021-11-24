@@ -102,12 +102,20 @@ namespace business_layer.Suscripciones
                 };
                 _context.Suscripcions.Add(suscripcion);
                 
+                try
+                {
                 var result = await _context.SaveChangesAsync();
                  if(result > 0){
                     return Unit.Value;
                 }
+                     
+                }
+                catch (System.Exception ex)
+                { 
+                    throw ex;
+                }
 
-                //throw new CustomExceptionHelper(HttpStatusCode.InternalServerError, new {mensaje="No se pudo agregar la suscripción"});
+                throw new CustomExceptionHelper(HttpStatusCode.InternalServerError, new {mensaje="No se pudo agregar la suscripción"});
             }
         }
         
