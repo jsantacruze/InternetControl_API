@@ -97,7 +97,8 @@ namespace business_layer.Suscripciones
                     Ipv6 = request.Ipv6 ?? "",
                     IdequipoCliente=request.IdequipoCliente,
                     IdpuntoAcceso=request.IdpuntoAcceso,
-                    TipoSuscripcionId=request.TipoSuscripcionId
+                    TipoSuscripcionId=request.TipoSuscripcionId,
+                    EnviarFactura = false
                 };
                 _context.Suscripcions.Add(suscripcion);
                 
@@ -106,7 +107,7 @@ namespace business_layer.Suscripciones
                     return Unit.Value;
                 }
 
-                throw new CustomExceptionHelper(HttpStatusCode.InternalServerError, new {mensaje="No se pudo agregar la suscripción"});
+                //throw new CustomExceptionHelper(HttpStatusCode.InternalServerError, new {mensaje="No se pudo agregar la suscripción"});
             }
         }
         
