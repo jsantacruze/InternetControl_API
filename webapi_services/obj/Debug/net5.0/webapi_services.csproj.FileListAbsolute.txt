@@ -400,7 +400,6 @@ C:\Users\YANDI\Documents\Sistemas\InternetControlAPI\InternetControl_API\webapi_
 C:\Users\YANDI\Documents\Sistemas\InternetControlAPI\InternetControl_API\webapi_services\obj\Debug\net5.0\webapi_services.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\YANDI\Documents\Sistemas\InternetControlAPI\InternetControl_API\webapi_services\obj\Debug\net5.0\webapi_services.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\YANDI\Documents\Sistemas\InternetControlAPI\InternetControl_API\webapi_services\obj\Debug\net5.0\staticwebassets\webapi_services.StaticWebAssets.Manifest.cache
-C:\Users\YANDI\Documents\Sistemas\InternetControlAPI\InternetControl_API\webapi_services\obj\Debug\net5.0\staticwebassets\webapi_services.StaticWebAssets.xml
 C:\Users\YANDI\Documents\Sistemas\InternetControlAPI\InternetControl_API\webapi_services\obj\Debug\net5.0\scopedcss\bundle\webapi_services.styles.css
 C:\Users\YANDI\Documents\Sistemas\InternetControlAPI\InternetControl_API\webapi_services\obj\Debug\net5.0\webapi_services.RazorTargetAssemblyInfo.cache
 C:\Users\YANDI\Documents\Sistemas\InternetControlAPI\InternetControl_API\webapi_services\obj\Debug\net5.0\webapi_services.csproj.CopyComplete
