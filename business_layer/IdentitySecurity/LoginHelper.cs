@@ -1,9 +1,11 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Threading;
 using System.Threading.Tasks;
 using business_layer.DTO;
+using business_layer.ExceptionManager;
 using business_layer.IdentitySecurity.Contracts;
 using data_access;
 using domain_layer.Security;
@@ -40,7 +42,7 @@ namespace business_layer.IdentitySecurity
             {
                 var usuario = await _userManager.FindByEmailAsync(request.Email);
                 if(usuario == null){
-                    throw new Exception("El usuario no existe");
+                    throw new CustomExceptionHelper(HttpStatusCode.NotFound, new { mensaje = "No existe ningún usuario con el email especificado" });
                 }
                 var result = await _signInManager.CheckPasswordSignInAsync(usuario, request.Password, false);
                 var rolesResult = await _userManager.GetRolesAsync(usuario);
@@ -54,7 +56,7 @@ namespace business_layer.IdentitySecurity
                         Imagen = null
                     };
                 }
-                throw new Exception("Clave inválida");
+                throw new CustomExceptionHelper(HttpStatusCode.NotFound, new { mensaje = "Clave inválida" });
             }
         }
 
