@@ -12,6 +12,7 @@ namespace business_layer.DTO
         public string StrIdsexo { get; set; }
         public string StrTelefono { get; set; }
         public string StrMovil { get; set; }
+        public string StrEmail { get; set; }
         public byte[] ImgFoto { get; set; }
         public bool BlnActivo { get; set; }
         public bool BlnPersonaNatural { get; set; }

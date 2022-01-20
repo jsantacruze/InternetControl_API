@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "FilePath": "e:\\App\\API\\InternetControl_API\\webapi_services\\webapi_services.csproj",
+=======
+  "FilePath": "c:\\Users\\YANDI\\Documents\\Sistemas\\InternetControlAPI\\InternetControl_API\\webapi_services\\webapi_services.csproj",
+>>>>>>> 2643a0d47b93579fee6d34036c310e54b00a4903
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "5.0",
