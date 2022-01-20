@@ -7,8 +7,4 @@ build_property.PublishSingleFile =
 build_property.IncludeAllContentForSelfExtract = 
 build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
 build_property.RootNamespace = webapi_services
-<<<<<<< HEAD
 build_property.ProjectDir = E:\App\API\InternetControl_API\webapi_services\
-=======
-build_property.ProjectDir = c:\Users\YANDI\Documents\Sistemas\InternetControlAPI\InternetControl_API\webapi_services\
->>>>>>> 3ebdc17c544728773a647c1b4c3f9167346edd71

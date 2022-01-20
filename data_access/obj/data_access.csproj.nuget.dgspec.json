@@ -1,7 +1,6 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
     "E:\\App\\API\\InternetControl_API\\data_access\\data_access.csproj": {}
   },
   "projects": {
@@ -13,31 +12,10 @@
         "projectPath": "E:\\App\\API\\InternetControl_API\\data_access\\data_access.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
         "outputPath": "E:\\App\\API\\InternetControl_API\\data_access\\obj\\",
-=======
-    "C:\\Users\\YANDI\\Documents\\Sistemas\\InternetControlAPI\\InternetControl_API\\data_access\\data_access.csproj": {}
-  },
-  "projects": {
-    "C:\\Users\\YANDI\\Documents\\Sistemas\\InternetControlAPI\\InternetControl_API\\data_access\\data_access.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\YANDI\\Documents\\Sistemas\\InternetControlAPI\\InternetControl_API\\data_access\\data_access.csproj",
-        "projectName": "data_access",
-        "projectPath": "C:\\Users\\YANDI\\Documents\\Sistemas\\InternetControlAPI\\InternetControl_API\\data_access\\data_access.csproj",
-        "packagesPath": "C:\\Users\\YANDI\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\YANDI\\Documents\\Sistemas\\InternetControlAPI\\InternetControl_API\\data_access\\obj\\",
->>>>>>> 3ebdc17c544728773a647c1b4c3f9167346edd71
         "projectStyle": "PackageReference",
         "configFilePaths": [
-<<<<<<< HEAD
           "E:\\App\\API\\InternetControl_API\\NuGet.Config",
           "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config"
-=======
-          "C:\\Users\\YANDI\\Documents\\Sistemas\\InternetControlAPI\\InternetControl_API\\NuGet.Config",
-          "C:\\Users\\YANDI\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 20.2.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
->>>>>>> 3ebdc17c544728773a647c1b4c3f9167346edd71
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -49,13 +27,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-<<<<<<< HEAD
               "E:\\App\\API\\InternetControl_API\\domain_layer\\domain_layer.csproj": {
                 "projectPath": "E:\\App\\API\\InternetControl_API\\domain_layer\\domain_layer.csproj"
-=======
-              "C:\\Users\\YANDI\\Documents\\Sistemas\\InternetControlAPI\\InternetControl_API\\domain_layer\\domain_layer.csproj": {
-                "projectPath": "C:\\Users\\YANDI\\Documents\\Sistemas\\InternetControlAPI\\InternetControl_API\\domain_layer\\domain_layer.csproj"
->>>>>>> 3ebdc17c544728773a647c1b4c3f9167346edd71
               }
             }
           }
@@ -106,7 +79,6 @@
         }
       }
     },
-<<<<<<< HEAD
     "E:\\App\\API\\InternetControl_API\\domain_layer\\domain_layer.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -115,28 +87,10 @@
         "projectPath": "E:\\App\\API\\InternetControl_API\\domain_layer\\domain_layer.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
         "outputPath": "E:\\App\\API\\InternetControl_API\\domain_layer\\obj\\",
-=======
-    "C:\\Users\\YANDI\\Documents\\Sistemas\\InternetControlAPI\\InternetControl_API\\domain_layer\\domain_layer.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\YANDI\\Documents\\Sistemas\\InternetControlAPI\\InternetControl_API\\domain_layer\\domain_layer.csproj",
-        "projectName": "domain_layer",
-        "projectPath": "C:\\Users\\YANDI\\Documents\\Sistemas\\InternetControlAPI\\InternetControl_API\\domain_layer\\domain_layer.csproj",
-        "packagesPath": "C:\\Users\\YANDI\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\YANDI\\Documents\\Sistemas\\InternetControlAPI\\InternetControl_API\\domain_layer\\obj\\",
->>>>>>> 3ebdc17c544728773a647c1b4c3f9167346edd71
         "projectStyle": "PackageReference",
         "configFilePaths": [
-<<<<<<< HEAD
           "E:\\App\\API\\InternetControl_API\\NuGet.Config",
           "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config"
-=======
-          "C:\\Users\\YANDI\\Documents\\Sistemas\\InternetControlAPI\\InternetControl_API\\NuGet.Config",
-          "C:\\Users\\YANDI\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 20.2.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
->>>>>>> 3ebdc17c544728773a647c1b4c3f9167346edd71
         ],
         "originalTargetFrameworks": [
           "net5.0"

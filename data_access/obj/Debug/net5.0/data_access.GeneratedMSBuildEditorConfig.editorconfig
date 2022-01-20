@@ -7,8 +7,4 @@ build_property.PublishSingleFile =
 build_property.IncludeAllContentForSelfExtract = 
 build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
 build_property.RootNamespace = data_access
-<<<<<<< HEAD
 build_property.ProjectDir = E:\App\API\InternetControl_API\data_access\
-=======
-build_property.ProjectDir = c:\Users\YANDI\Documents\Sistemas\InternetControlAPI\InternetControl_API\data_access\
->>>>>>> 3ebdc17c544728773a647c1b4c3f9167346edd71
