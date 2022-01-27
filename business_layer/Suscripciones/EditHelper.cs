@@ -285,11 +285,11 @@ namespace business_layer.Suscripciones
                 RuleFor(suscripcion => suscripcion.StrIdsector).NotEmpty().WithMessage("El valor de StrIdsector es requerido");
                 RuleFor(suscripcion => suscripcion.CodigoSuscriptor).NotEmpty().WithMessage("El valor de CodigoSuscriptor es requerido");
                 //RuleFor(suscripcion => suscripcion.Activo).NotEmpty().WithMessage("El valor de Activo es requerido");
-                RuleFor(suscripcion => suscripcion.CostoInstalacion).NotEmpty().WithMessage("El valor de Costo Instalación es requerido");
-                RuleFor(suscripcion => suscripcion.EquiposIncluidos).NotEmpty().WithMessage("El valor de Equipos Incluidos es requerido");
-                RuleFor(suscripcion => suscripcion.EquiposAdicionales).NotNull().WithMessage("El valor de Equipos Adicionales es requerido");
-                RuleFor(suscripcion => suscripcion.ValorMensualEquipos).NotEmpty().WithMessage("El valor de Valor Mensual Equipos es requerido");
-                RuleFor(suscripcion => suscripcion.ValorMensualAdicionales).NotEmpty().WithMessage("El Valor Mensual Adicionales es requerido");
+                //RuleFor(suscripcion => suscripcion.CostoInstalacion).NotEmpty().WithMessage("El valor de Costo Instalación es requerido");
+                //RuleFor(suscripcion => suscripcion.EquiposIncluidos).NotEmpty().WithMessage("El valor de Equipos Incluidos es requerido");
+                //RuleFor(suscripcion => suscripcion.EquiposAdicionales).NotNull().WithMessage("El valor de Equipos Adicionales es requerido");
+                //RuleFor(suscripcion => suscripcion.ValorMensualEquipos).NotEmpty().WithMessage("El valor de Valor Mensual Equipos es requerido");
+                //RuleFor(suscripcion => suscripcion.ValorMensualAdicionales).NotEmpty().WithMessage("El Valor Mensual Adicionales es requerido");
                 RuleFor(suscripcion => suscripcion.IdestadoSuscripcion).NotEmpty().WithMessage("El Valor Idestado Suscripcion es requerido");
                 RuleFor(suscripcion => suscripcion.Latitud).NotNull().WithMessage("El valor de Latitud es requerido");
                 RuleFor(suscripcion => suscripcion.Longitud).NotNull().WithMessage("El valor de Longitud es requerido");
