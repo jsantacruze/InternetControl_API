@@ -34,8 +34,7 @@ namespace business_layer.Distribucion.Torre
                 _context.TorreDistribucions
                 .Include(t => t.TorreUbicacion)
                 .Include(t => t.PuntoAccesoServicios)
-                .Where(t => (t.TorreUbicacionId == request.ubicacion_id && request.ubicacion_id.Trim() != "")
-                    || (t.TorreUbicacionId.Contains("") && request.ubicacion_id.ToString() == ""))
+                .Where(t => t.TorreUbicacionId == request.ubicacion_id)
                 .ToListAsync();
                 var torresListDTO = _mapper.Map<List<TorreDistribucion>, List<TorreDistribucionDTO>>(torresList);
                 return torresListDTO;
