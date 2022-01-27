@@ -14,9 +14,9 @@ namespace webapi_services.Controllers
     {
        [Route("lista/{ubicacion}")]
        [HttpGet("{ubicacion}")]
-        public async Task<ActionResult<List<TorreDistribucionDTO>>> GetByUbicacion(string location_id)
+        public async Task<ActionResult<List<TorreDistribucionDTO>>> GetByUbicacion(string ubicacion)
         {
-            return await Mediator.Send(new ConsultasHelper.TorreDistribucionQueryListRequest{ubicacion_id=location_id});
+            return await Mediator.Send(new ConsultasHelper.TorreDistribucionQueryListRequest{ubicacion_id=ubicacion});
         }
 
     }
