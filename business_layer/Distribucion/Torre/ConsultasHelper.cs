@@ -30,7 +30,7 @@ namespace business_layer.Distribucion.Torre
 
             public async Task<List<TorreDistribucionDTO>> Handle(TorreDistribucionQueryListRequest request, CancellationToken cancellationToken)
             {
-                if(request.ubicacion_id == null)
+                if(request.ubicacion_id.Trim() == "")
                 {
                     var torresList  = await 
                     _context.TorreDistribucions
