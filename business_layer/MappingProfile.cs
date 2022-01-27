@@ -18,6 +18,8 @@ namespace business_layer
              CreateMap<TipoEquipo, TipoEquipoDTO>();
             CreateMap<EquipoEnlaceCliente,EquipoEnlaceClienteDTO>();
             CreateMap<EstadoSuscripcion, EstadoSuscripcionDTO>();
+            CreateMap<TorreDistribucion, TorreDistribucionDTO>();
+            CreateMap<UbicacionEnlace, UbicacionEnlaceDTO>();
             CreateMap<Empleado, EmpleadoDTO>()
             .ForMember(destino => destino.NombreCompleto, c => c.MapFrom(s => $"{s.StrApellidos} {s.StrNombres}"));
             CreateMap<SectorCiudad, SectorCiudadDTO>();
