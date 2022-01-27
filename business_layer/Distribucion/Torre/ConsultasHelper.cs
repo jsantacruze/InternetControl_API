@@ -30,12 +30,24 @@ namespace business_layer.Distribucion.Torre
 
             public async Task<List<TorreDistribucionDTO>> Handle(TorreDistribucionQueryListRequest request, CancellationToken cancellationToken)
             {
-                var torresList = await 
-                _context.TorreDistribucions
-                .Include(t => t.TorreUbicacion)
-                .Include(t => t.PuntoAccesoServicios)
-                .Where(t => t.TorreUbicacionId == request.ubicacion_id)
-                .ToListAsync();
+                var torresList = new List<TorreDistribucion>();
+                if(request.ubicacion_id.Trim() != "")
+                {
+                    torresList = await 
+                    _context.TorreDistribucions
+                    .Include(t => t.TorreUbicacion)
+                    .Include(t => t.PuntoAccesoServicios)
+                    .Where(t => t.TorreUbicacionId == request.ubicacion_id)
+                    .ToListAsync();
+                }
+                else{
+
+                    torresList = await 
+                    _context.TorreDistribucions
+                    .Include(t => t.TorreUbicacion)
+                    .Include(t => t.PuntoAccesoServicios)
+                    .ToListAsync();
+                }
                 var torresListDTO = _mapper.Map<List<TorreDistribucion>, List<TorreDistribucionDTO>>(torresList);
                 return torresListDTO;
             }
