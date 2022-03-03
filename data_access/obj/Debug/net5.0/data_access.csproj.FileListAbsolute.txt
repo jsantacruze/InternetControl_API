@@ -56,7 +56,6 @@ C:\Mis Programas\MillenniumConnection\MillenniumConnection_App\MC_API_Rest\Inter
 C:\Mis Programas\MillenniumConnection\MillenniumConnection_App\MC_API_Rest\InternetControl_API\data_access\bin\Debug\net5.0\data_access.runtimeconfig.json
 C:\Mis Programas\MillenniumConnection\MillenniumConnection_App\MC_API_Rest\InternetControl_API\data_access\bin\Debug\net5.0\data_access.runtimeconfig.dev.json
 C:\Mis Programas\MillenniumConnection\MillenniumConnection_App\MC_API_Rest\InternetControl_API\data_access\bin\Debug\net5.0\data_access.dll
-C:\Mis Programas\MillenniumConnection\MillenniumConnection_App\MC_API_Rest\InternetControl_API\data_access\bin\Debug\net5.0\ref\data_access.dll
 C:\Mis Programas\MillenniumConnection\MillenniumConnection_App\MC_API_Rest\InternetControl_API\data_access\bin\Debug\net5.0\data_access.pdb
 C:\Mis Programas\MillenniumConnection\MillenniumConnection_App\MC_API_Rest\InternetControl_API\data_access\bin\Debug\net5.0\domain_layer.dll
 C:\Mis Programas\MillenniumConnection\MillenniumConnection_App\MC_API_Rest\InternetControl_API\data_access\bin\Debug\net5.0\domain_layer.pdb
@@ -124,3 +123,4 @@ E:\App\API\InternetControl_API\data_access\obj\Debug\net5.0\data_access.dll
 E:\App\API\InternetControl_API\data_access\obj\Debug\net5.0\ref\data_access.dll
 E:\App\API\InternetControl_API\data_access\obj\Debug\net5.0\data_access.pdb
 E:\App\API\InternetControl_API\data_access\obj\Debug\net5.0\data_access.genruntimeconfig.cache
+C:\Mis Programas\MillenniumConnection\MillenniumConnection_App\MC_API_Rest\InternetControl_API\data_access\obj\Debug\net5.0\refint\data_access.dll

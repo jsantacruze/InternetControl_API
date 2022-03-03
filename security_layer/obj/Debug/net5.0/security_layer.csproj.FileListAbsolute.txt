@@ -57,7 +57,6 @@ C:\Mis Programas\MillenniumConnection\MillenniumConnection_App\MC_API_Rest\secur
 C:\Mis Programas\MillenniumConnection\MillenniumConnection_App\MC_API_Rest\security_layer\obj\Debug\net5.0\security_layer.csproj.CopyComplete
 C:\Mis Programas\MillenniumConnection\MillenniumConnection_App\MC_API_Rest\InternetControl_API\security_layer\bin\Debug\net5.0\security_layer.deps.json
 C:\Mis Programas\MillenniumConnection\MillenniumConnection_App\MC_API_Rest\InternetControl_API\security_layer\bin\Debug\net5.0\security_layer.dll
-C:\Mis Programas\MillenniumConnection\MillenniumConnection_App\MC_API_Rest\InternetControl_API\security_layer\bin\Debug\net5.0\ref\security_layer.dll
 C:\Mis Programas\MillenniumConnection\MillenniumConnection_App\MC_API_Rest\InternetControl_API\security_layer\bin\Debug\net5.0\security_layer.pdb
 C:\Mis Programas\MillenniumConnection\MillenniumConnection_App\MC_API_Rest\InternetControl_API\security_layer\bin\Debug\net5.0\business_layer.dll
 C:\Mis Programas\MillenniumConnection\MillenniumConnection_App\MC_API_Rest\InternetControl_API\security_layer\bin\Debug\net5.0\data_access.dll
@@ -131,3 +130,4 @@ E:\App\API\InternetControl_API\security_layer\obj\Debug\net5.0\security_layer.cs
 E:\App\API\InternetControl_API\security_layer\obj\Debug\net5.0\security_layer.dll
 E:\App\API\InternetControl_API\security_layer\obj\Debug\net5.0\ref\security_layer.dll
 E:\App\API\InternetControl_API\security_layer\obj\Debug\net5.0\security_layer.pdb
+C:\Mis Programas\MillenniumConnection\MillenniumConnection_App\MC_API_Rest\InternetControl_API\security_layer\obj\Debug\net5.0\refint\security_layer.dll
