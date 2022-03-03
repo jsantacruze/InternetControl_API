@@ -251,7 +251,6 @@ C:\Mis Programas\MillenniumConnection\MillenniumConnection_App\MC_API_Rest\Inter
 C:\Mis Programas\MillenniumConnection\MillenniumConnection_App\MC_API_Rest\InternetControl_API\webapi_services\bin\Debug\net5.0\webapi_services.runtimeconfig.json
 C:\Mis Programas\MillenniumConnection\MillenniumConnection_App\MC_API_Rest\InternetControl_API\webapi_services\bin\Debug\net5.0\webapi_services.runtimeconfig.dev.json
 C:\Mis Programas\MillenniumConnection\MillenniumConnection_App\MC_API_Rest\InternetControl_API\webapi_services\bin\Debug\net5.0\webapi_services.dll
-C:\Mis Programas\MillenniumConnection\MillenniumConnection_App\MC_API_Rest\InternetControl_API\webapi_services\bin\Debug\net5.0\ref\webapi_services.dll
 C:\Mis Programas\MillenniumConnection\MillenniumConnection_App\MC_API_Rest\InternetControl_API\webapi_services\bin\Debug\net5.0\webapi_services.pdb
 C:\Mis Programas\MillenniumConnection\MillenniumConnection_App\MC_API_Rest\InternetControl_API\webapi_services\bin\Debug\net5.0\AutoMapper.dll
 C:\Mis Programas\MillenniumConnection\MillenniumConnection_App\MC_API_Rest\InternetControl_API\webapi_services\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
@@ -318,7 +317,6 @@ C:\Mis Programas\MillenniumConnection\MillenniumConnection_App\MC_API_Rest\Inter
 C:\Mis Programas\MillenniumConnection\MillenniumConnection_App\MC_API_Rest\InternetControl_API\webapi_services\obj\Debug\net5.0\webapi_services.MvcApplicationPartsAssemblyInfo.cs
 C:\Mis Programas\MillenniumConnection\MillenniumConnection_App\MC_API_Rest\InternetControl_API\webapi_services\obj\Debug\net5.0\webapi_services.MvcApplicationPartsAssemblyInfo.cache
 C:\Mis Programas\MillenniumConnection\MillenniumConnection_App\MC_API_Rest\InternetControl_API\webapi_services\obj\Debug\net5.0\staticwebassets\webapi_services.StaticWebAssets.Manifest.cache
-C:\Mis Programas\MillenniumConnection\MillenniumConnection_App\MC_API_Rest\InternetControl_API\webapi_services\obj\Debug\net5.0\staticwebassets\webapi_services.StaticWebAssets.xml
 C:\Mis Programas\MillenniumConnection\MillenniumConnection_App\MC_API_Rest\InternetControl_API\webapi_services\obj\Debug\net5.0\scopedcss\bundle\webapi_services.styles.css
 C:\Mis Programas\MillenniumConnection\MillenniumConnection_App\MC_API_Rest\InternetControl_API\webapi_services\obj\Debug\net5.0\webapi_services.RazorTargetAssemblyInfo.cache
 C:\Mis Programas\MillenniumConnection\MillenniumConnection_App\MC_API_Rest\InternetControl_API\webapi_services\obj\Debug\net5.0\webapi_services.csproj.CopyComplete
@@ -571,3 +569,4 @@ E:\App\API\InternetControl_API\webapi_services\obj\Debug\net5.0\webapi_services.
 E:\App\API\InternetControl_API\webapi_services\obj\Debug\net5.0\ref\webapi_services.dll
 E:\App\API\InternetControl_API\webapi_services\obj\Debug\net5.0\webapi_services.pdb
 E:\App\API\InternetControl_API\webapi_services\obj\Debug\net5.0\webapi_services.genruntimeconfig.cache
+C:\Mis Programas\MillenniumConnection\MillenniumConnection_App\MC_API_Rest\InternetControl_API\webapi_services\obj\Debug\net5.0\refint\webapi_services.dll

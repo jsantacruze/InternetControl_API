@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+
 namespace business_layer.DTO
 {
     public class TorreDistribucionDTO
@@ -13,6 +15,9 @@ namespace business_layer.DTO
         public int? TorreNumSuscriptores { get; set; }
 
         public virtual UbicacionEnlaceDTO TorreUbicacion { get; set; }
+
+        public List<PuntoAccesoServicioDTO> PuntoAccesoServicios { get; set; }
+
    
     }
 }
