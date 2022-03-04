@@ -12,6 +12,7 @@ namespace webapi_services.Controllers
 {
     public class SuscriptorController : BaseController
     {
+        [ApiExplorerSettings(IgnoreApi=true)]
         [Route("filtrar/{filtro}")]
         [HttpGet("{filtro}")]
         public async Task<ActionResult<List<SuscriptorDTO>>> GetByFiltro(string filtro)

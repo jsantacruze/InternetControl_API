@@ -56,10 +56,6 @@ namespace webapi_services
                 opt.Filters.Add(new AuthorizeFilter(policy));
             })
             .AddFluentValidation(cfg => cfg.RegisterValidatorsFromAssemblyContaining<EditHelper>());
-            services.AddSwaggerGen(c =>
-            {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "webapi_services", Version = "v1" });
-            });
 
             var builder = services.AddIdentityCore<User>();
             var identityBuilder = new IdentityBuilder(builder.UserType, builder.Services);
@@ -79,6 +75,14 @@ namespace webapi_services
                 ValidateIssuer = false
             }
             );
+
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "webapi_services", Version = "v1" });
+                c.CustomSchemaIds(c => c.FullName); 
+                c.ResolveConflictingActions(apiDescriptions => apiDescriptions.First());
+            });
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
