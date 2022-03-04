@@ -18,7 +18,7 @@ namespace domain_layer.entities
         public double? TorreLongitud { get; set; }
         public string TorreObservaciones { get; set; }
         public string TorreUbicacionId { get; set; }
-        //public byte[] TorreImagen { get; set; }
+        public byte[] TorreImagen { get; set; }
         public string TorreTiempoReservaBaterias { get; set; }
         public int? TorreNumSuscriptores { get; set; }
 
