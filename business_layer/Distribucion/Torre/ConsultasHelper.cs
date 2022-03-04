@@ -35,9 +35,10 @@ namespace business_layer.Distribucion.Torre
                     var torresList  = await 
                     _context.TorreDistribucions
                     .Include(t => t.TorreUbicacion)
-                    .Include(t => t.PuntoAccesoServicios
-                        .Select(p => p.Servidor))
-                    .Where(t => t.TorreUbicacionId == request.ubicacion_id)
+                    .Include(t => t.PuntoAccesoServicios)
+                        .ThenInclude(p => p.Servidor)
+                    .Include(t => t.PuntoAccesoServicios)
+                        .ThenInclude(p => p.IdubicacionNavigation)
                     .ToListAsync();
                     var torresListDTO = _mapper.Map<List<TorreDistribucion>, List<TorreDistribucionDTO>>(torresList);
                     return torresListDTO;
@@ -47,8 +48,10 @@ namespace business_layer.Distribucion.Torre
                     var torresList  = await 
                     _context.TorreDistribucions
                     .Include(t => t.TorreUbicacion)
-                    .Include(t => t.PuntoAccesoServicios
-                        .Select(p => p.Servidor))
+                    .Include(t => t.PuntoAccesoServicios)
+                        .ThenInclude(p => p.Servidor)
+                    .Include(t => t.PuntoAccesoServicios)
+                        .ThenInclude(p => p.IdubicacionNavigation)
                     .ToListAsync();
                     var torresListDTO = _mapper.Map<List<TorreDistribucion>, List<TorreDistribucionDTO>>(torresList);
                     return torresListDTO;
