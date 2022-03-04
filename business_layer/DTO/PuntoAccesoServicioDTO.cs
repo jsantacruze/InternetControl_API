@@ -22,9 +22,6 @@ namespace business_layer.DTO
         public string EquipoFrecuencia { get; set; }
         public string EquipoModo { get; set; }
         public int? EquipoNumSuscriptores { get; set; }
-
-        public TipoEquipoDTO IdtipoEquipoNavigation { get; set; }
-        public UbicacionEnlaceDTO IdubicacionNavigation { get; set; }
         public ServidorDTO Servidor { get; set; }
     }
 }
