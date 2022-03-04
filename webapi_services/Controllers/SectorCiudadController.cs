@@ -12,6 +12,7 @@ namespace webapi_services.Controllers
 {
     public class SectorCiudadController: BaseController
     {
+        [ApiExplorerSettings(IgnoreApi=true)]
        [Route("filtrar/{filtro}")]
        [HttpGet("{filtro}")]
         public async Task<ActionResult<List<SectorCiudadDTO>>> Get(string filtro)

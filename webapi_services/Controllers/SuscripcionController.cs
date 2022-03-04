@@ -19,6 +19,7 @@ namespace webapi_services.Controllers
             return await Mediator.Send(request);
         } 
 
+        [ApiExplorerSettings(IgnoreApi=true)]
        [Route("filtrar/{filtro}")]
        [HttpGet("{filtro}")]
         public async Task<ActionResult<List<SuscripcionDTO>>> GetByFiltro(string filtro)

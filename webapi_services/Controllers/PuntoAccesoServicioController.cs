@@ -12,9 +12,10 @@ namespace webapi_services.Controllers
 {
     public class PuntoAccesoServicioController: BaseController
     {
+        [ApiExplorerSettings(IgnoreApi=true)]
        [Route("filtrar/{filtro}")]
        [HttpGet("{filtro}")]
-        public async Task<ActionResult<List<PuntoAccesoServicioDTO>>> Get(string filtro)
+        public async Task<ActionResult<List<PuntoAccesoServicioDTO>>> GetLista(string filtro)
         {
             return await Mediator.Send(new ConsultasNomencladoresHelper.PuntoAccesoServicioQueryListRequest{Filtro=filtro});
         }   
