@@ -37,10 +37,6 @@ namespace business_layer.Distribucion.Torre
                     .Include(t => t.TorreUbicacion)
                     .Include(t => t.PuntoAccesoServicios
                         .Select(p => p.Servidor))
-                    .Include(t => t.PuntoAccesoServicios
-                        .Select(p => p.IdubicacionNavigation))
-                    .Include(t => t.PuntoAccesoServicios
-                        .Select(p => p.IdtipoEquipoNavigation))
                     .Where(t => t.TorreUbicacionId == request.ubicacion_id)
                     .ToListAsync();
                     var torresListDTO = _mapper.Map<List<TorreDistribucion>, List<TorreDistribucionDTO>>(torresList);
@@ -53,10 +49,6 @@ namespace business_layer.Distribucion.Torre
                     .Include(t => t.TorreUbicacion)
                     .Include(t => t.PuntoAccesoServicios
                         .Select(p => p.Servidor))
-                    .Include(t => t.PuntoAccesoServicios
-                        .Select(p => p.IdubicacionNavigation))
-                    .Include(t => t.PuntoAccesoServicios
-                        .Select(p => p.IdtipoEquipoNavigation))
                     .ToListAsync();
                     var torresListDTO = _mapper.Map<List<TorreDistribucion>, List<TorreDistribucionDTO>>(torresList);
                     return torresListDTO;
