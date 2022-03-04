@@ -33,6 +33,7 @@ namespace business_layer
             .ForMember(destino => destino.Suscripcion, opt => opt.MapFrom(src => src.Suscripcion));
             CreateMap<TrackingSuscripcion,TrackingSuscripcionDTO>();
             CreateMap<ImagenSuscripcion,ImagenSuscripcionDTO>();
+            CreateMap<Servidor, ServidorDTO>();
         }
     }
 }
