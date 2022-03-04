@@ -8,12 +8,14 @@ using business_layer.DTO;
 using data_access;
 using domain_layer.entities;
 using MediatR;
+using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 
 namespace business_layer.Suscripciones
 {
     public class ConsultasHelper
     {
+        //POR FILTRO
         public class SuscripcionQueryListRequest: IRequest<List<SuscripcionDTO>>{
             public string Filtro {get; set;}
         }
@@ -42,5 +44,34 @@ namespace business_layer.Suscripciones
                 return suscripcionesDTO;
             }
         }
+
+        //POR RANGO GEOGRAFICO
+        public class SuscripcionQueryListByCoordinatesRequest: IRequest<List<SuscripcionDTO>>{
+            public float Latitud {get; set;}
+            public float Longitud {get; set;}
+        }
+
+        public class SuscripcionQueryListByCoordinatesHandler: IRequestHandler<SuscripcionQueryListByCoordinatesRequest, List<SuscripcionDTO>> {
+
+            private readonly InternetControlContext _context;
+            private readonly IMapper _mapper;
+
+            public SuscripcionQueryListByCoordinatesHandler(InternetControlContext context, IMapper mapper){
+                this._context = context;
+                this._mapper = mapper;
+            }
+
+            public async Task<List<SuscripcionDTO>> Handle(SuscripcionQueryListByCoordinatesRequest request, CancellationToken cancellationToken){
+                var paramLongitud = new SqlParameter("@longitude", request.Longitud);
+                var paramLatitud = new SqlParameter("@latitude", request.Latitud);
+
+                var suscripcionesList = await 
+                _context.Suscripcions.FromSqlRaw("getListaSuscripcionesFromUbicacionAndUmbral @longitude, @latitude", paramLongitud, paramLatitud)
+                .ToListAsync();
+                var suscripcionesDTO = _mapper.Map<List<Suscripcion>, List<SuscripcionDTO>>(suscripcionesList);
+                return suscripcionesDTO;
+            }
+        }
+ 
     }
 }
