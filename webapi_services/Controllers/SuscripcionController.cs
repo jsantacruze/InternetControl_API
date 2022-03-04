@@ -19,6 +19,14 @@ namespace webapi_services.Controllers
             return await Mediator.Send(request);
         } 
 
+        [Route("filter_bydistance_to_position/{latitud}/{longitud}")]
+        [HttpGet("{latitud}/{longitud}")]
+        public async Task<ActionResult<List<SuscripcionDTO>>> GetByDitanceToPosition(float latitud, float longitud)
+        {
+            return await Mediator.Send(new ConsultasHelper.SuscripcionQueryListByCoordinatesRequest {Latitud = latitud, Longitud = longitud});
+        }
+
+
         [ApiExplorerSettings(IgnoreApi=true)]
        [Route("filtrar/{filtro}")]
        [HttpGet("{filtro}")]
@@ -26,6 +34,8 @@ namespace webapi_services.Controllers
         {
             return await Mediator.Send(new ConsultasHelper.SuscripcionQueryListRequest{Filtro=filtro});
         }
+
+
         [Route("updateCoordenadas")]
         [HttpPut]
         public async Task<ActionResult<Unit>> Edit(EditHelper.EditCoordenadasSuscripcionRequest request)
