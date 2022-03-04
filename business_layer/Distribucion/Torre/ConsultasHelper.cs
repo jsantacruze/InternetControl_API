@@ -40,6 +40,12 @@ namespace business_layer.Distribucion.Torre
                     .Where(t => t.TorreUbicacionId == request.ubicacion_id)
                     .ToListAsync();
                     var torresListDTO = _mapper.Map<List<TorreDistribucion>, List<TorreDistribucionDTO>>(torresList);
+                    torresListDTO.Add(
+                        new TorreDistribucionDTO{
+                                TorreId=-1,
+                                TorreDescripcion="IF"+ request.ubicacion_id
+                        }
+                    );
                     return torresListDTO;
                 }
                 else{
@@ -50,6 +56,12 @@ namespace business_layer.Distribucion.Torre
                         .ThenInclude(p => p.Servidor)
                     .ToListAsync();
                     var torresListDTO = _mapper.Map<List<TorreDistribucion>, List<TorreDistribucionDTO>>(torresList);
+                                        torresListDTO.Add(
+                        new TorreDistribucionDTO{
+                                TorreId=-1,
+                                TorreDescripcion="ELSE"+ request.ubicacion_id
+                        }
+                    );
                     return torresListDTO;
                 }
             }
