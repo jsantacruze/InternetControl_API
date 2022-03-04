@@ -14,7 +14,7 @@ namespace business_layer.DTO
         public string TorreTiempoReservaBaterias { get; set; }
         public int? TorreNumSuscriptores { get; set; }
 
-        public virtual UbicacionEnlaceDTO TorreUbicacion { get; set; }
+        public UbicacionEnlaceDTO TorreUbicacion { get; set; }
 
         public List<PuntoAccesoServicioDTO> PuntoAccesoServicios { get; set; }
 

@@ -26,8 +26,5 @@ namespace business_layer.DTO
         public TipoEquipoDTO IdtipoEquipoNavigation { get; set; }
         public UbicacionEnlaceDTO IdubicacionNavigation { get; set; }
         public ServidorDTO Servidor { get; set; }
-        public TorreDistribucionDTO Torre { get; set; }
-
-
     }
 }
