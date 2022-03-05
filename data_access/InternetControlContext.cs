@@ -22,6 +22,13 @@ namespace data_access
 
         public virtual DbSet<Anio> Anios { get; set; }
         public virtual DbSet<AnioMe> AnioMes { get; set; }
+        //public virtual DbSet<AspNetRole> AspNetRoles { get; set; }
+        //public virtual DbSet<AspNetRoleClaim> AspNetRoleClaims { get; set; }
+        //public virtual DbSet<AspNetUser> AspNetUsers { get; set; }
+        //public virtual DbSet<AspNetUserClaim> AspNetUserClaims { get; set; }
+        //public virtual DbSet<AspNetUserLogin> AspNetUserLogins { get; set; }
+        //public virtual DbSet<AspNetUserRole> AspNetUserRoles { get; set; }
+        //public virtual DbSet<AspNetUserToken> AspNetUserTokens { get; set; }
         public virtual DbSet<Bitacora> Bitacoras { get; set; }
         public virtual DbSet<CategoriaProcesoSistema> CategoriaProcesoSistemas { get; set; }
         public virtual DbSet<Ciudad> Ciudads { get; set; }
@@ -54,6 +61,7 @@ namespace data_access
         public virtual DbSet<TipoEquipo> TipoEquipos { get; set; }
         public virtual DbSet<TipoSuscripcion> TipoSuscripcions { get; set; }
         public virtual DbSet<TorreDistribucion> TorreDistribucions { get; set; }
+        public virtual DbSet<TrackinSuscripcionImage> TrackinSuscripcionImages { get; set; }
         public virtual DbSet<TrackingSuscripcion> TrackingSuscripcions { get; set; }
         public virtual DbSet<UbicacionEnlace> UbicacionEnlaces { get; set; }
         public virtual DbSet<Usuario> Usuarios { get; set; }
@@ -116,6 +124,81 @@ namespace data_access
                     .HasForeignKey(d => d.Idmes)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK_AnioMes_Mes");
+            });
+
+            modelBuilder.Entity<AspNetRole>(entity =>
+            {
+                entity.Property(e => e.Name).HasMaxLength(256);
+
+                entity.Property(e => e.NormalizedName).HasMaxLength(256);
+            });
+
+            modelBuilder.Entity<AspNetRoleClaim>(entity =>
+            {
+                entity.Property(e => e.RoleId)
+                    .IsRequired()
+                    .HasMaxLength(450);
+
+                entity.HasOne(d => d.Role)
+                    .WithMany(p => p.AspNetRoleClaims)
+                    .HasForeignKey(d => d.RoleId);
+            });
+
+            modelBuilder.Entity<AspNetUser>(entity =>
+            {
+                entity.Property(e => e.Email).HasMaxLength(256);
+
+                entity.Property(e => e.NormalizedEmail).HasMaxLength(256);
+
+                entity.Property(e => e.NormalizedUserName).HasMaxLength(256);
+
+                entity.Property(e => e.UserName).HasMaxLength(256);
+            });
+
+            modelBuilder.Entity<AspNetUserClaim>(entity =>
+            {
+                entity.Property(e => e.UserId)
+                    .IsRequired()
+                    .HasMaxLength(450);
+
+                entity.HasOne(d => d.User)
+                    .WithMany(p => p.AspNetUserClaims)
+                    .HasForeignKey(d => d.UserId);
+            });
+
+            modelBuilder.Entity<AspNetUserLogin>(entity =>
+            {
+                entity.HasKey(e => new { e.LoginProvider, e.ProviderKey });
+
+                entity.Property(e => e.UserId)
+                    .IsRequired()
+                    .HasMaxLength(450);
+
+                entity.HasOne(d => d.User)
+                    .WithMany(p => p.AspNetUserLogins)
+                    .HasForeignKey(d => d.UserId);
+            });
+
+            modelBuilder.Entity<AspNetUserRole>(entity =>
+            {
+                entity.HasKey(e => new { e.UserId, e.RoleId });
+
+                entity.HasOne(d => d.Role)
+                    .WithMany(p => p.AspNetUserRoles)
+                    .HasForeignKey(d => d.RoleId);
+
+                entity.HasOne(d => d.User)
+                    .WithMany(p => p.AspNetUserRoles)
+                    .HasForeignKey(d => d.UserId);
+            });
+
+            modelBuilder.Entity<AspNetUserToken>(entity =>
+            {
+                entity.HasKey(e => new { e.UserId, e.LoginProvider, e.Name });
+
+                entity.HasOne(d => d.User)
+                    .WithMany(p => p.AspNetUserTokens)
+                    .HasForeignKey(d => d.UserId);
             });
 
             modelBuilder.Entity<Bitacora>(entity =>
@@ -1620,6 +1703,34 @@ namespace data_access
                     .HasForeignKey(d => d.TorreUbicacionId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK_TorreDistribucion_UbicacionEnlace");
+            });
+
+            modelBuilder.Entity<TrackinSuscripcionImage>(entity =>
+            {
+                entity.HasKey(e => e.ImageId);
+
+                entity.ToTable("TrackinSuscripcion_Images");
+
+                entity.Property(e => e.ImageId)
+                    .ValueGeneratedNever()
+                    .HasColumnName("image_id");
+
+                entity.Property(e => e.ImageDescription)
+                    .HasMaxLength(150)
+                    .IsUnicode(false)
+                    .HasColumnName("image_description");
+
+                entity.Property(e => e.ImageTrackingId).HasColumnName("image_tracking_id");
+
+                entity.Property(e => e.ImageValue)
+                    .IsRequired()
+                    .HasColumnType("image")
+                    .HasColumnName("image_value");
+
+                entity.HasOne(d => d.ImageTracking)
+                    .WithMany(p => p.TrackinSuscripcionImages)
+                    .HasForeignKey(d => d.ImageTrackingId)
+                    .HasConstraintName("FK_TrackinSuscripcion_Images_TrackingSuscripcion");
             });
 
             modelBuilder.Entity<TrackingSuscripcion>(entity =>

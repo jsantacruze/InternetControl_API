@@ -26,14 +26,16 @@ namespace business_layer
             CreateMap<PuntoAccesoServicio, PuntoAccesoServicioDTO>();
             CreateMap<Usuario, UsuarioDTO>()
             .ForMember(destino => destino.Empleado, opt => opt.MapFrom(src => src.CedulaEmpleadoNavigation));
+            CreateMap<TrackingSuscripcion,TrackingSuscripcionDTO>();
+            CreateMap<ImagenSuscripcion,ImagenSuscripcionDTO>();
+            CreateMap<Servidor, ServidorDTO>();
             CreateMap<TrackingSuscripcion, IncidenciaDTO>()
             .ForMember(destino => destino.incidencia_id, opt => opt.MapFrom(src => src.Idtracking))
             .ForMember(destino => destino.EmpleadoAsignado, opt => opt.MapFrom(src => src.IdempleadoAsignadoNavigation))
             .ForMember(destino => destino.UsuarioCrea, opt => opt.MapFrom(src => src.IdusuarioCreaNavigation))
-            .ForMember(destino => destino.Suscripcion, opt => opt.MapFrom(src => src.Suscripcion));
-            CreateMap<TrackingSuscripcion,TrackingSuscripcionDTO>();
-            CreateMap<ImagenSuscripcion,ImagenSuscripcionDTO>();
-            CreateMap<Servidor, ServidorDTO>();
+            .ForMember(destino => destino.Suscripcion, opt => opt.MapFrom(src => src.Suscripcion))
+            .ForMember(destino => destino.IncidenciaImages, opt => opt.MapFrom(src => src.TrackinSuscripcionImages));   
+            CreateMap<TrackinSuscripcionImage, IncidenciaImageDTO>();
         }
     }
 }

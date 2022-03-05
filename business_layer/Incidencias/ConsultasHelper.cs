@@ -54,6 +54,7 @@ namespace business_layer.Incidencias
                 .Include(s => s.IdempleadoAsignadoNavigation)
                 .Include(s=> s.IdusuarioCreaNavigation)
                 .ThenInclude(u => u.CedulaEmpleadoNavigation)
+                .Include(i => i.TrackinSuscripcionImages)
                 .Where(t => t.Atendido == request.estado_atendido
                     && 
                    ( 

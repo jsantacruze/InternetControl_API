@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 namespace business_layer.DTO
 {
@@ -21,6 +22,7 @@ namespace business_layer.DTO
         public virtual EmpleadoDTO EmpleadoAsignado { get; set; }
         public virtual UsuarioDTO UsuarioCrea { get; set; }
         public virtual SuscripcionDTO Suscripcion { get; set; }
+        public List<IncidenciaImageDTO> IncidenciaImages { get; set; }
 
     }
 }

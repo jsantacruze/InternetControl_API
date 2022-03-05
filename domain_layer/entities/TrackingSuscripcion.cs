@@ -7,6 +7,11 @@ namespace domain_layer.entities
 {
     public partial class TrackingSuscripcion
     {
+        public TrackingSuscripcion()
+        {
+            TrackinSuscripcionImages = new HashSet<TrackinSuscripcionImage>();
+        }
+
         public long Idtracking { get; set; }
         public string Evento { get; set; }
         public DateTime FechaRegistro { get; set; }
@@ -22,5 +27,6 @@ namespace domain_layer.entities
         public virtual Empleado IdempleadoAsignadoNavigation { get; set; }
         public virtual Usuario IdusuarioCreaNavigation { get; set; }
         public virtual Suscripcion Suscripcion { get; set; }
+        public virtual ICollection<TrackinSuscripcionImage> TrackinSuscripcionImages { get; set; }
     }
 }
