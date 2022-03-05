@@ -77,6 +77,7 @@ E:\App\API\InternetControl_API\domain_layer\bin\Debug\net5.0\domain_layer.deps.j
 E:\App\API\InternetControl_API\domain_layer\bin\Debug\net5.0\domain_layer.dll
 E:\App\API\InternetControl_API\domain_layer\bin\Debug\net5.0\ref\domain_layer.dll
 E:\App\API\InternetControl_API\domain_layer\bin\Debug\net5.0\domain_layer.pdb
+E:\App\API\InternetControl_API\domain_layer\obj\Debug\net5.0\domain_layer.csproj.AssemblyReference.cache
 E:\App\API\InternetControl_API\domain_layer\obj\Debug\net5.0\domain_layer.GeneratedMSBuildEditorConfig.editorconfig
 E:\App\API\InternetControl_API\domain_layer\obj\Debug\net5.0\domain_layer.AssemblyInfoInputs.cache
 E:\App\API\InternetControl_API\domain_layer\obj\Debug\net5.0\domain_layer.AssemblyInfo.cs
@@ -84,4 +85,3 @@ E:\App\API\InternetControl_API\domain_layer\obj\Debug\net5.0\domain_layer.csproj
 E:\App\API\InternetControl_API\domain_layer\obj\Debug\net5.0\domain_layer.dll
 E:\App\API\InternetControl_API\domain_layer\obj\Debug\net5.0\ref\domain_layer.dll
 E:\App\API\InternetControl_API\domain_layer\obj\Debug\net5.0\domain_layer.pdb
-E:\App\API\InternetControl_API\domain_layer\obj\Debug\net5.0\domain_layer.csproj.AssemblyReference.cache
