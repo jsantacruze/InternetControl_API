@@ -487,6 +487,7 @@ C:\Users\ROG\Documents\ApiMC\InternetControl_API\webapi_services\obj\Debug\net5.
 C:\Users\ROG\Documents\ApiMC\InternetControl_API\webapi_services\obj\Debug\net5.0\webapi_services.RazorTargetAssemblyInfo.cache
 C:\Users\ROG\Documents\ApiMC\InternetControl_API\webapi_services\obj\Debug\net5.0\webapi_services.csproj.CopyComplete
 C:\Users\ROG\Documents\ApiMC\InternetControl_API\webapi_services\obj\Debug\net5.0\webapi_services.genruntimeconfig.cache
+C:\Mis Programas\MillenniumConnection\MillenniumConnection_App\MC_API_Rest\InternetControl_API\webapi_services\obj\Debug\net5.0\refint\webapi_services.dll
 E:\App\API\InternetControl_API\webapi_services\bin\Debug\net5.0\appsettings.Development.json
 E:\App\API\InternetControl_API\webapi_services\bin\Debug\net5.0\appsettings.json
 E:\App\API\InternetControl_API\webapi_services\bin\Debug\net5.0\webapi_services.exe
@@ -569,4 +570,3 @@ E:\App\API\InternetControl_API\webapi_services\obj\Debug\net5.0\webapi_services.
 E:\App\API\InternetControl_API\webapi_services\obj\Debug\net5.0\ref\webapi_services.dll
 E:\App\API\InternetControl_API\webapi_services\obj\Debug\net5.0\webapi_services.pdb
 E:\App\API\InternetControl_API\webapi_services\obj\Debug\net5.0\webapi_services.genruntimeconfig.cache
-C:\Mis Programas\MillenniumConnection\MillenniumConnection_App\MC_API_Rest\InternetControl_API\webapi_services\obj\Debug\net5.0\refint\webapi_services.dll

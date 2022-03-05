@@ -69,6 +69,10 @@ C:\Users\ROG\Documents\ApiMC\InternetControl_API\domain_layer\obj\Debug\net5.0\d
 C:\Users\ROG\Documents\ApiMC\InternetControl_API\domain_layer\obj\Debug\net5.0\domain_layer.dll
 C:\Users\ROG\Documents\ApiMC\InternetControl_API\domain_layer\obj\Debug\net5.0\ref\domain_layer.dll
 C:\Users\ROG\Documents\ApiMC\InternetControl_API\domain_layer\obj\Debug\net5.0\domain_layer.pdb
+<<<<<<< HEAD
+=======
+C:\Mis Programas\MillenniumConnection\MillenniumConnection_App\MC_API_Rest\InternetControl_API\domain_layer\obj\Debug\net5.0\refint\domain_layer.dll
+>>>>>>> 83494d68e8706e0de42c15d2869dd3fde72adac7
 E:\App\API\InternetControl_API\domain_layer\bin\Debug\net5.0\domain_layer.deps.json
 E:\App\API\InternetControl_API\domain_layer\bin\Debug\net5.0\domain_layer.dll
 E:\App\API\InternetControl_API\domain_layer\bin\Debug\net5.0\ref\domain_layer.dll
@@ -80,8 +84,3 @@ E:\App\API\InternetControl_API\domain_layer\obj\Debug\net5.0\domain_layer.csproj
 E:\App\API\InternetControl_API\domain_layer\obj\Debug\net5.0\domain_layer.dll
 E:\App\API\InternetControl_API\domain_layer\obj\Debug\net5.0\ref\domain_layer.dll
 E:\App\API\InternetControl_API\domain_layer\obj\Debug\net5.0\domain_layer.pdb
-<<<<<<< HEAD
-E:\App\API\InternetControl_API\domain_layer\obj\Debug\net5.0\domain_layer.csproj.AssemblyReference.cache
-=======
-C:\Mis Programas\MillenniumConnection\MillenniumConnection_App\MC_API_Rest\InternetControl_API\domain_layer\obj\Debug\net5.0\refint\domain_layer.dll
->>>>>>> 83494d68e8706e0de42c15d2869dd3fde72adac7
