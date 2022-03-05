@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 using System.Net;
 using System.Threading;
 using System.Threading.Tasks;
@@ -11,6 +12,7 @@ namespace business_layer.Incidencias
 {
     public class EditHelper
     {
+        //ATENDER INCIDENCIAS
             public class AtenderIncidenciaRequest: IRequest{
                 public long incidencia_id { get; set; }
                 public bool incidencia_atendida { get; set; }
@@ -48,6 +50,49 @@ namespace business_layer.Incidencias
                 }
             }
         }
+
+        //REGISTRAR IMAGENES INCIDENCIAS
+            public class RegistrarImagenIncidenciaRequest: IRequest{
+                public byte[] imagen_value { get; set; }
+                public string imagen_descripcion { get; set; }
+                public long incidencia_id { get; set; }
+            }
+            public class RegistrarImagenIncidenciaValidator: AbstractValidator<RegistrarImagenIncidenciaRequest>{
+            public RegistrarImagenIncidenciaValidator()
+            {
+                RuleFor(v => v.incidencia_id).NotEmpty().WithMessage("Debe especificar el identificador de la incidencia");
+                RuleFor(v => v.imagen_value).NotNull().WithMessage("Debe proporcionar una imagen");
+            }
+
+            public class RegistrarImagenIncidenciaHandler : IRequestHandler<RegistrarImagenIncidenciaRequest>
+            {
+                private readonly InternetControlContext _context;
+                public RegistrarImagenIncidenciaHandler(InternetControlContext context){
+                    _context = context;
+                }
+                public async Task<Unit> Handle(RegistrarImagenIncidenciaRequest request, CancellationToken cancellationToken)
+                {
+                    var nextID = _context.TrackinSuscripcionImages.Max(s => s.ImageId) + 1;
+
+                    var imagen_incidencia = new domain_layer.entities.TrackinSuscripcionImage()
+                    {
+                        ImageId=nextID,
+                        ImageTrackingId = request.incidencia_id,
+                        ImageValue = request.imagen_value,
+                        ImageDescription = request.imagen_descripcion
+                    };
+
+                    _context.TrackinSuscripcionImages.Add(imagen_incidencia);
+                    var result = await _context.SaveChangesAsync();
+                    if(result > 0)
+                    {
+                        return Unit.Value;
+                    }
+                    throw new CustomExceptionHelper(HttpStatusCode.InternalServerError, new {mensaje="No se guardaron los cambios"});
+                }
+            }
+        }
+
 
     }
 }

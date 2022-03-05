@@ -16,6 +16,12 @@ namespace webapi_services.Controllers
             return await Mediator.Send(request);
         }
 
+        [HttpPut("add_image")]
+        public async Task<ActionResult<Unit>> AddImage(EditHelper.RegistrarImagenIncidenciaRequest request)
+        {
+            return await Mediator.Send(request);
+        }
+
         [HttpPut("attend")]
         public async Task<ActionResult<Unit>> Edit(EditHelper.AtenderIncidenciaRequest request)
         {
