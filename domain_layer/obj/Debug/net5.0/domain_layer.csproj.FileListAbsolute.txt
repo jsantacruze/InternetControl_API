@@ -84,3 +84,4 @@ E:\App\API\InternetControl_API\domain_layer\obj\Debug\net5.0\domain_layer.csproj
 E:\App\API\InternetControl_API\domain_layer\obj\Debug\net5.0\domain_layer.dll
 E:\App\API\InternetControl_API\domain_layer\obj\Debug\net5.0\ref\domain_layer.dll
 E:\App\API\InternetControl_API\domain_layer\obj\Debug\net5.0\domain_layer.pdb
+E:\App\API\InternetControl_API\domain_layer\obj\Debug\net5.0\domain_layer.csproj.AssemblyReference.cache
