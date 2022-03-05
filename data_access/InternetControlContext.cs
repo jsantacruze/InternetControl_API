@@ -1711,6 +1711,8 @@ namespace data_access
 
                 entity.ToTable("TrackinSuscripcion_Images");
 
+                entity.Property(e => e.ImageId).HasColumnName("image_id");
+                entity.Property(e => e.ImageId).UseIdentityColumn();
                 entity.Property(e => e.ImageId)
                     .ValueGeneratedNever()
                     .HasColumnName("image_id");
