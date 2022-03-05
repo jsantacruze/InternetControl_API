@@ -92,6 +92,40 @@ namespace business_layer.Incidencias
                 }
             }
         }
+        //ELIMINAR IMAGENES INCIDENCIAS
+            public class EliminarImagenIncidenciaRequest: IRequest{
+                public long imagen_id { get; set; }
+            }
+            public class EliminarImagenIncidenciaValidator: AbstractValidator<EliminarImagenIncidenciaRequest>{
+            public EliminarImagenIncidenciaValidator()
+            {
+                RuleFor(v => v.imagen_id).NotNull().WithMessage("Debe especificar el identificador de la imagen a eliminar");
+            }
+
+            public class EliminarImagenIncidenciaHandler : IRequestHandler<EliminarImagenIncidenciaRequest>
+            {
+                private readonly InternetControlContext _context;
+                public EliminarImagenIncidenciaHandler(InternetControlContext context){
+                    _context = context;
+                }
+                public async Task<Unit> Handle(EliminarImagenIncidenciaRequest request, CancellationToken cancellationToken)
+                {
+                    var imagen = await _context.TrackinSuscripcionImages.FindAsync(request.imagen_id);
+                    if (imagen == null)
+                    {
+                        throw new CustomExceptionHelper(HttpStatusCode.NotFound, new {mensaje="La imagen no se encuentra registrada"});
+                    }
+                    
+                    _context.TrackinSuscripcionImages.Remove(imagen);
+                    var result = await _context.SaveChangesAsync();
+                    if(result > 0)
+                    {
+                        return Unit.Value;
+                    }
+                    throw new CustomExceptionHelper(HttpStatusCode.InternalServerError, new {mensaje="No se guardaron los cambios"});
+                }
+            }
+        }
 
 
     }

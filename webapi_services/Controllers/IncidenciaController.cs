@@ -22,6 +22,12 @@ namespace webapi_services.Controllers
             return await Mediator.Send(request);
         }
 
+        [HttpDelete("delete_image")]
+        public async Task<ActionResult<Unit>> DeleteImage(EditHelper.EliminarImagenIncidenciaRequest request)
+        {
+            return await Mediator.Send(request);
+        }
+
         [HttpPut("attend")]
         public async Task<ActionResult<Unit>> Edit(EditHelper.AtenderIncidenciaRequest request)
         {
