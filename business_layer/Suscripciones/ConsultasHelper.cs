@@ -66,7 +66,12 @@ namespace business_layer.Suscripciones
                 var paramLatitud = new SqlParameter("@latitude", request.Latitud);
 
                 var suscripcionesList = await 
-                _context.Suscripcions.FromSqlRaw("getListaSuscripcionesFromUbicacionAndUmbral @longitude, @latitude", paramLongitud, paramLatitud)
+                _context.Suscripcions
+                .FromSqlRaw("SELECT * FROM getListaSuscripcionesFromUbicacionAndUmbralAsTable(@longitude, @latitude)", paramLongitud, paramLatitud)
+                .Include(s => s.CodigoSuscriptorNavigation)
+                .Include(s => s.TrackingSuscripcions)
+                .Include(s => s.ImagenSuscripcions)
+                .Include(s => s.StrIdsectorNavigation)
                 .ToListAsync();
                 var suscripcionesDTO = _mapper.Map<List<Suscripcion>, List<SuscripcionDTO>>(suscripcionesList);
                 return suscripcionesDTO;
