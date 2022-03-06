@@ -36,10 +36,12 @@ namespace business_layer.DTO
 
         public SuscriptorDTO CodigoSuscriptorNavigation{get; set;}
         public virtual SectorCiudadDTO StrIdsectorNavigation { get; set; }
+        public virtual TipoSuscripcionDTO TipoSuscripcion { get; set; }
 
         public EquipoEnlaceClienteDTO IdequipoClienteNavigation { get; set; }
 
         public List<ImagenSuscripcionDTO> Imagenes { get; set; }
         public List<TrackingSuscripcionDTO> TrackingSuscripcions { get; set; }
+
     }
 }
