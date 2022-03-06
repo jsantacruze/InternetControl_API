@@ -96,7 +96,7 @@ namespace webapi_services
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "webapi_services v1"));
             }
             app.UseAuthentication();
-            //app.UseHttpsRedirection();
+            app.UseHttpsRedirection();
 
             app.UseRouting();
 
