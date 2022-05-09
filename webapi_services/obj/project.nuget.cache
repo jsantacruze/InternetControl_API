@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "LAc58RF3/tfYllLsKiaPIfhhdvajvpVFHjAbu3740Nf2xW1oqlZ1f+tIcS2Onmrh8j/OVqUXEXDymv/JAF1+fw==",
+  "dgSpecHash": "ERnp/lBb5etzyGpafkg/P5MN5rws2L98K1M8raciyc6zMAYRkTKXW/efQbGV79ux8LG0OH+ZGiKkZnM2PoIcXA==",
   "success": true,
   "projectFilePath": "C:\\Mis Programas\\MillenniumConnection\\MillenniumConnection_App\\MC_API_Rest\\InternetControl_API\\webapi_services\\webapi_services.csproj",
   "expectedPackageFiles": [
@@ -115,7 +115,8 @@
     "C:\\Users\\jsant\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\jsant\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\jsant\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\jsant\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
+    "C:\\Users\\jsant\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
+    "C:\\Users\\jsant\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.14\\microsoft.netcore.app.host.win-x64.5.0.14.nupkg.sha512"
   ],
   "logs": []
 }

@@ -33,6 +33,7 @@ namespace business_layer.Suscripciones
             public async Task<List<SuscripcionDTO>> Handle(SuscripcionQueryListRequest request, CancellationToken cancellationToken){
                 var suscripcionesList = await 
                 _context.Suscripcions
+                .Include(s => s.TipoSuscripcion)
                 .Include(s => s.CodigoSuscriptorNavigation)
                 .Include(s => s.TrackingSuscripcions)
                 .Include(s => s.ImagenSuscripcions)

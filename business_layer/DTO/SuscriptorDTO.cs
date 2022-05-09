@@ -18,5 +18,6 @@ namespace business_layer.DTO
         public bool BlnPersonaNatural { get; set; }
         public double DblPorcentajeDescuento { get; set; }
         public string StrObservaciones { get; set; }
+
     }
 }

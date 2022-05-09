@@ -68,7 +68,7 @@ namespace business_layer.Suscriptores
 
             public async Task<Unit> Handle(AddSuscriptorRequest request, CancellationToken cancellationToken)
             {
-                var suscriptor = await _context.Suscriptors.FindAsync(request.StrCedulaRuc);
+                var suscriptor =  _context.Suscriptors.FirstOrDefault(s =>s.StrCedulaRuc.Equals(request.StrCedulaRuc));
                 if (suscriptor != null)
                 {
                     throw new Exception("El suscriptor ya se encuentra registrado");
@@ -78,6 +78,7 @@ namespace business_layer.Suscriptores
                 suscriptor = new Suscriptor
                 {
                     DblCodigoSuscriptor = nextID,
+                    StrCedulaRuc=request.StrCedulaRuc,
                     StrNombres = request.StrNombres,
                     StrApellidos = request.StrApellidos,
                     StrRazonSocial = request.StrRazonSocial,
