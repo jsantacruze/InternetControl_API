@@ -34,6 +34,7 @@ namespace business_layer.Suscripciones
                 var suscripcionesList = await 
                 _context.Suscripcions
                 .Include(s => s.TipoSuscripcion)
+                .Include(s => s.IdpuntoAccesoNavigation)
                 .Include(s => s.CodigoSuscriptorNavigation)
                 .Include(s => s.TrackingSuscripcions)
                 .Include(s => s.ImagenSuscripcions)
@@ -70,6 +71,7 @@ namespace business_layer.Suscripciones
                 _context.Suscripcions
                 .FromSqlRaw("SELECT * FROM getListaSuscripcionesFromUbicacionAndUmbralAsTable(@longitude, @latitude)", paramLongitud, paramLatitud)
                 .Include(s => s.TipoSuscripcion)
+                .Include(s => s.IdpuntoAccesoNavigation)
                 .Include(s => s.CodigoSuscriptorNavigation)
                 .Include(s => s.TrackingSuscripcions)
                 .Include(s => s.ImagenSuscripcions)

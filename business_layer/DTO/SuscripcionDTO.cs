@@ -39,6 +39,7 @@ namespace business_layer.DTO
         public virtual TipoSuscripcionDTO TipoSuscripcion { get; set; }
 
         public EquipoEnlaceClienteDTO IdequipoClienteNavigation { get; set; }
+        public PuntoAccesoServicioDTO IdpuntoAccesoNavigation { get; set; }
 
         public List<ImagenSuscripcionDTO> Imagenes { get; set; }
         public List<TrackingSuscripcionDTO> TrackingSuscripcions { get; set; }
