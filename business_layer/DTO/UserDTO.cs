@@ -9,5 +9,7 @@ namespace business_layer.DTO
         public string Imagen {get; set;}
 
         public EmpleadoDTO empleado {get; set;}
+
+        public UsuarioDTO usuarioDesktop {get; set;}
     }
 }
