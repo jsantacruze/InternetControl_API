@@ -1,1 +1,11 @@
 webapi_services/Properties/launchSettings.json
+business_layer/bin/Debug/net5.0/business_layer.dll~bd0bbaa7605d60078b34c1c5cc4f6c0140fa4045
+business_layer/bin/Debug/net5.0/business_layer.pdb~bd0bbaa7605d60078b34c1c5cc4f6c0140fa4045
+business_layer/obj/Debug/net5.0/business_layer.csproj.CoreCompileInputs.cache~bd0bbaa7605d60078b34c1c5cc4f6c0140fa4045
+business_layer/obj/Debug/net5.0/business_layer.dll~bd0bbaa7605d60078b34c1c5cc4f6c0140fa4045
+business_layer/obj/Debug/net5.0/business_layer.pdb~bd0bbaa7605d60078b34c1c5cc4f6c0140fa4045
+business_layer/obj/Debug/net5.0/ref/business_layer.dll~bd0bbaa7605d60078b34c1c5cc4f6c0140fa4045
+security_layer/bin/Debug/net5.0/business_layer.dll~bd0bbaa7605d60078b34c1c5cc4f6c0140fa4045
+security_layer/bin/Debug/net5.0/business_layer.pdb~bd0bbaa7605d60078b34c1c5cc4f6c0140fa4045
+security_layer/bin/Debug/net5.0/security_layer.dll~bd0bbaa7605d60078b34c1c5cc4f6c0140fa4045
+security_layer/bin/Debug/net5.0/security_layer.pdb~bd0bbaa7605d60078b34c1c5cc4f6c0140fa4045
