@@ -18,6 +18,7 @@ namespace business_layer.Suscripciones
         //POR FILTRO
         public class SuscripcionQueryListRequest: IRequest<List<SuscripcionDTO>>{
             public string Filtro {get; set;}
+            public string TipoFiltro {get; set;} //"1": NOMBRES APELLIDOS  2: CEDULA 
         }
 
         public class SuscripcionQueryListHandler: IRequestHandler<SuscripcionQueryListRequest, List<SuscripcionDTO>> {
@@ -39,8 +40,15 @@ namespace business_layer.Suscripciones
                 .Include(s => s.TrackingSuscripcions)
                 .Include(s => s.ImagenSuscripcions)
                 .Include(s => s.StrIdsectorNavigation)
-                .Where(s => s.CodigoSuscriptorNavigation.StrNombres.Contains(request.Filtro) 
-                || s.CodigoSuscriptorNavigation.StrApellidos.Contains(request.Filtro))
+                .Where(s => 
+                            ((s.CodigoSuscriptorNavigation.StrNombres.Contains(request.Filtro) || 
+                            s.CodigoSuscriptorNavigation.StrApellidos.Contains(request.Filtro)) 
+                            && (request.TipoFiltro == "1" || request.TipoFiltro == "" || request.TipoFiltro == null))
+                            ||
+                            ((s.CodigoSuscriptorNavigation.StrNombres.Contains(request.Filtro) || 
+                            s.CodigoSuscriptorNavigation.StrCedulaRuc == request.Filtro) 
+                            && (request.TipoFiltro == "2"))                            
+                        )
                 .ToListAsync();
                 var suscripcionesDTO = _mapper.Map<List<Suscripcion>, List<SuscripcionDTO>>(suscripcionesList);
                 return suscripcionesDTO;
