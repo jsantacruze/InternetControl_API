@@ -4,5 +4,8 @@ namespace business_layer.DTO
     {
         public string Idproceso { get; set; }
         public string DescripcionProceso { get; set; }
+
+        public CategoriaProcesoSistemaDTO IdcategoriaProcesoNavigation { get; set; }
+
     }
 }

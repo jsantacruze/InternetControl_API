@@ -61,8 +61,9 @@ namespace business_layer.IdentitySecurity
                                         .Include(ud => ud.CedulaEmpleadoNavigation)
                                         .Include(ud => ud.UsuarioGrupos)
                                             .ThenInclude(ug => ug.IdgrupoNavigation.PermisoGrupos)
-                                            .ThenInclude(pg => pg.IdprocesoNavigation)
-                                        .FirstOrDefault(ud => ud.CedulaEmpleadoNavigation.StrEmail == usuario.Email);
+                                            .ThenInclude(pg => pg.IdprocesoNavigation.IdcategoriaProcesoNavigation)
+                                        .FirstOrDefault(ud => ud.CedulaEmpleadoNavigation.StrEmail == usuario.Email
+                                        && ud.UsuarioGrupos.Any(ug => ug.IdgrupoNavigation.PermisoGrupos.Any(pg => pg.IdprocesoNavigation.IdcategoriaProceso == 6)));
                     var userDesktopDTO = _mapper.Map<Usuario, UsuarioDTO>(userDesktop);
                     return new UserDTO{
                         NombreCompleto = usuario.NombreCompleto,                       
