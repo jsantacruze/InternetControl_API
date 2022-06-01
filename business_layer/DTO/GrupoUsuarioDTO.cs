@@ -5,8 +5,8 @@ namespace business_layer.DTO
     public class GrupoUsuarioDTO
     {
         public string Idgrupo { get; set; }
-        public string Idproceso { get; set; }
+        public string Nombre { get; set; }
 
-        public ProcesoSistemaDTO IdprocesoNavigation { get; set; }
+        public List<PermisoGrupoDTO> PermisoGrupos { get; set; }
     }
 }
