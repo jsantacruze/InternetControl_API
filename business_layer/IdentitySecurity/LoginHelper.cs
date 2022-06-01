@@ -59,7 +59,8 @@ namespace business_layer.IdentitySecurity
                 if(result.Succeeded){
                     var userDesktop = _context.Usuarios
                                         .Include(ud => ud.CedulaEmpleadoNavigation)
-                                        .Include(ud => ud.UsuarioGrupos.Select(ug => ug.IdgrupoNavigation.PermisoGrupos))
+                                        .Include(ud => ud.UsuarioGrupos)
+                                            .ThenInclude(ug => ug.IdgrupoNavigation.PermisoGrupos)
                                         .FirstOrDefault(ud => ud.CedulaEmpleadoNavigation.StrEmail == usuario.Email);
                     var userDesktopDTO = _mapper.Map<Usuario, UsuarioDTO>(userDesktop);
                     return new UserDTO{
