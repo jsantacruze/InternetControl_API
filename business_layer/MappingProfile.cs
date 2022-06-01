@@ -41,7 +41,8 @@ namespace business_layer
             CreateMap<GrupoUsuario, GrupoUsuarioDTO>();
             CreateMap<PermisoGrupo, PermisoGrupoDTO>();
             CreateMap<ProcesoSistema, ProcesoSistemaDTO>();
-            
+            CreateMap<CategoriaProcesoSistema, CategoriaProcesoSistemaDTO>();
+
         }
     }
 }
