@@ -27,9 +27,9 @@ namespace webapi_services.Controllers
         }
 
 
-        [ApiExplorerSettings(IgnoreApi=true)]
-       [Route("filtrar")]
+       // [ApiExplorerSettings(IgnoreApi=true)]
        [HttpPost]
+       [Route("filtrar")]
         public async Task<ActionResult<List<SuscripcionDTO>>> GetByFiltro(ConsultasHelper.SuscripcionQueryListRequest request)
         {
             return await Mediator.Send(request);
