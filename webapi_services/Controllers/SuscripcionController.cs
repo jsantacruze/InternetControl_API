@@ -28,11 +28,11 @@ namespace webapi_services.Controllers
 
 
         [ApiExplorerSettings(IgnoreApi=true)]
-       [Route("filtrar/{filtro}/{tipo}")]
-       [HttpGet("{filtro}/{tipo}")]
-        public async Task<ActionResult<List<SuscripcionDTO>>> GetByFiltro(string filtro, string tipo)
+       [Route("filtrar")]
+       [HttpPost]
+        public async Task<ActionResult<List<SuscripcionDTO>>> GetByFiltro(ConsultasHelper.SuscripcionQueryListRequest request)
         {
-            return await Mediator.Send(new ConsultasHelper.SuscripcionQueryListRequest{Filtro=filtro, TipoFiltro=tipo});
+            return await Mediator.Send(request);
         }
 
 
