@@ -39,6 +39,7 @@ namespace business_layer
             CreateMap<TrackinSuscripcionImage, IncidenciaImageDTO>();
             CreateMap<UsuarioGrupo, UsuarioGrupoDTO>();
             CreateMap<GrupoUsuario, GrupoUsuarioDTO>();
+            CreateMap<PermisoGrupo, PermisoGrupoDTO>();
             CreateMap<ProcesoSistema, ProcesoSistemaDTO>();
             
         }
