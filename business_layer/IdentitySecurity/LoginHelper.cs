@@ -58,8 +58,6 @@ namespace business_layer.IdentitySecurity
                 var rolesList = new List<String>(rolesResult);
                 if(result.Succeeded){
                     var userDesktop = _context.Usuarios
-                                        .Include(ud => ud.CedulaEmpleadoNavigation)
-                                        .Include(ud => ud.UsuarioGrupos)
                                         .Include(ud => ud.UsuarioGrupos.Select(ug => ug.IdgrupoNavigation))
                                         .FirstOrDefault(ud => ud.CedulaEmpleadoNavigation.StrEmail == usuario.Email);
                     var userDesktopDTO = _mapper.Map<Usuario, UsuarioDTO>(userDesktop);
