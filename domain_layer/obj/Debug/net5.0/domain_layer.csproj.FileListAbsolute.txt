@@ -74,3 +74,15 @@ C:\Mis Programas\MillenniumConnection\MillenniumConnection_App\MC_API_Rest\Inter
 C:\Mis Programas\MillenniumConnection\MillenniumConnection_App\MC_API_Rest\InternetControl_API\domain_layer\obj\Debug\net5.0\domain_layer.pdb
 C:\Mis Programas\MillenniumConnection\MillenniumConnection_App\MC_API_Rest\InternetControl_API\domain_layer\obj\Debug\net5.0\ref\domain_layer.dll
 >>>>>>> 4e232659d459fd209c4db8d2c78156bc24140199
+E:\App\API\InternetControl_API\domain_layer\bin\Debug\net5.0\domain_layer.deps.json
+E:\App\API\InternetControl_API\domain_layer\bin\Debug\net5.0\domain_layer.dll
+E:\App\API\InternetControl_API\domain_layer\bin\Debug\net5.0\ref\domain_layer.dll
+E:\App\API\InternetControl_API\domain_layer\bin\Debug\net5.0\domain_layer.pdb
+E:\App\API\InternetControl_API\domain_layer\obj\Debug\net5.0\domain_layer.csproj.AssemblyReference.cache
+E:\App\API\InternetControl_API\domain_layer\obj\Debug\net5.0\domain_layer.GeneratedMSBuildEditorConfig.editorconfig
+E:\App\API\InternetControl_API\domain_layer\obj\Debug\net5.0\domain_layer.AssemblyInfoInputs.cache
+E:\App\API\InternetControl_API\domain_layer\obj\Debug\net5.0\domain_layer.AssemblyInfo.cs
+E:\App\API\InternetControl_API\domain_layer\obj\Debug\net5.0\domain_layer.csproj.CoreCompileInputs.cache
+E:\App\API\InternetControl_API\domain_layer\obj\Debug\net5.0\domain_layer.dll
+E:\App\API\InternetControl_API\domain_layer\obj\Debug\net5.0\ref\domain_layer.dll
+E:\App\API\InternetControl_API\domain_layer\obj\Debug\net5.0\domain_layer.pdb
