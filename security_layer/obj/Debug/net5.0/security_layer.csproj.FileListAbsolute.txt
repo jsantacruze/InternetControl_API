@@ -115,22 +115,3 @@ C:\Mis Programas\MillenniumConnection\MillenniumConnection_App\MC_API_Rest\Inter
 C:\Mis Programas\MillenniumConnection\MillenniumConnection_App\MC_API_Rest\InternetControl_API\security_layer\obj\Debug\net5.0\security_layer.pdb
 C:\Mis Programas\MillenniumConnection\MillenniumConnection_App\MC_API_Rest\InternetControl_API\security_layer\obj\Debug\net5.0\ref\security_layer.dll
 >>>>>>> 4e232659d459fd209c4db8d2c78156bc24140199
-E:\App\API\InternetControl_API\security_layer\bin\Debug\net5.0\security_layer.deps.json
-E:\App\API\InternetControl_API\security_layer\bin\Debug\net5.0\security_layer.dll
-E:\App\API\InternetControl_API\security_layer\bin\Debug\net5.0\ref\security_layer.dll
-E:\App\API\InternetControl_API\security_layer\bin\Debug\net5.0\security_layer.pdb
-E:\App\API\InternetControl_API\security_layer\bin\Debug\net5.0\business_layer.dll
-E:\App\API\InternetControl_API\security_layer\bin\Debug\net5.0\data_access.dll
-E:\App\API\InternetControl_API\security_layer\bin\Debug\net5.0\domain_layer.dll
-E:\App\API\InternetControl_API\security_layer\bin\Debug\net5.0\business_layer.pdb
-E:\App\API\InternetControl_API\security_layer\bin\Debug\net5.0\data_access.pdb
-E:\App\API\InternetControl_API\security_layer\bin\Debug\net5.0\domain_layer.pdb
-E:\App\API\InternetControl_API\security_layer\obj\Debug\net5.0\security_layer.csproj.AssemblyReference.cache
-E:\App\API\InternetControl_API\security_layer\obj\Debug\net5.0\security_layer.GeneratedMSBuildEditorConfig.editorconfig
-E:\App\API\InternetControl_API\security_layer\obj\Debug\net5.0\security_layer.AssemblyInfoInputs.cache
-E:\App\API\InternetControl_API\security_layer\obj\Debug\net5.0\security_layer.AssemblyInfo.cs
-E:\App\API\InternetControl_API\security_layer\obj\Debug\net5.0\security_layer.csproj.CoreCompileInputs.cache
-E:\App\API\InternetControl_API\security_layer\obj\Debug\net5.0\security_layer.csproj.CopyComplete
-E:\App\API\InternetControl_API\security_layer\obj\Debug\net5.0\security_layer.dll
-E:\App\API\InternetControl_API\security_layer\obj\Debug\net5.0\ref\security_layer.dll
-E:\App\API\InternetControl_API\security_layer\obj\Debug\net5.0\security_layer.pdb
