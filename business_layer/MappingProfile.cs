@@ -20,6 +20,7 @@ namespace business_layer
             CreateMap<EstadoSuscripcion, EstadoSuscripcionDTO>();
             CreateMap<TorreDistribucion, TorreDistribucionDTO>();
             CreateMap<UbicacionEnlace, UbicacionEnlaceDTO>();
+            CreateMap<Usuario, UsuarioDTO>();
             CreateMap<Empleado, EmpleadoDTO>()
             .ForMember(destino => destino.NombreCompleto, c => c.MapFrom(s => $"{s.StrApellidos} {s.StrNombres}"));
             CreateMap<SectorCiudad, SectorCiudadDTO>();
@@ -36,6 +37,10 @@ namespace business_layer
             .ForMember(destino => destino.Suscripcion, opt => opt.MapFrom(src => src.Suscripcion))
             .ForMember(destino => destino.IncidenciaImages, opt => opt.MapFrom(src => src.TrackinSuscripcionImages));   
             CreateMap<TrackinSuscripcionImage, IncidenciaImageDTO>();
+            CreateMap<UsuarioGrupo, UsuarioGrupoDTO>();
+            CreateMap<GrupoUsuario, GrupoUsuarioDTO>();
+            CreateMap<ProcesoSistema, ProcesoSistemaDTO>();
+            
         }
     }
 }

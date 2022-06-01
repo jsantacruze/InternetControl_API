@@ -4,10 +4,12 @@ using System.Linq;
 using System.Net;
 using System.Threading;
 using System.Threading.Tasks;
+using AutoMapper;
 using business_layer.DTO;
 using business_layer.ExceptionManager;
 using business_layer.IdentitySecurity.Contracts;
 using data_access;
+using domain_layer.entities;
 using domain_layer.Security;
 using FluentValidation;
 using MediatR;
@@ -33,10 +35,17 @@ namespace business_layer.IdentitySecurity
             private readonly UserManager<User> _userManager;
             private readonly SignInManager<User> _signInManager;
             private readonly IJWTGenerator _iJWTGenerator;
-            public LoginHandler(UserManager<User> userManager, SignInManager<User> signInManager, IJWTGenerator iJWTGenerator){
+
+            private readonly InternetControlContext _context;
+            private readonly IMapper _mapper;
+
+            public LoginHandler(UserManager<User> userManager, SignInManager<User> signInManager, IJWTGenerator iJWTGenerator, InternetControlContext context 
+                , IMapper mapper){
                 _userManager = userManager;
                 _signInManager = signInManager;
                 _iJWTGenerator = iJWTGenerator;
+                _context = context;
+                _mapper = mapper;
             }
             public async Task<UserDTO> Handle(LoginRequest request, CancellationToken cancellationToken)
             {
@@ -48,12 +57,18 @@ namespace business_layer.IdentitySecurity
                 var rolesResult = await _userManager.GetRolesAsync(usuario);
                 var rolesList = new List<String>(rolesResult);
                 if(result.Succeeded){
+                    var userDesktop = _context.Usuarios
+                                        .Include(ud => ud.CedulaEmpleadoNavigation)
+                                        .Include(ud => ud.UsuarioGrupos.Select(ug => ug.IdgrupoNavigation.PermisoGrupos.Select(pg => pg.IdprocesoNavigation)))
+                                        .FirstOrDefault(ud => ud.CedulaEmpleadoNavigation.StrEmail == usuario.Email);
+                    var userDesktopDTO = _mapper.Map<Usuario, UsuarioDTO>(userDesktop);
                     return new UserDTO{
-                        NombreCompleto = usuario.NombreCompleto,
+                        NombreCompleto = usuario.NombreCompleto,                       
                         Token = _iJWTGenerator.GenerateToken(usuario, rolesList),
                         Email = usuario.Email,
                         UserName = usuario.UserName,
-                        Imagen = null
+                        Imagen = null,
+                        usuarioDesktop = userDesktopDTO 
                     };
                 }
                 throw new CustomExceptionHelper(HttpStatusCode.NotFound, new { mensaje = "Clave inválida" });

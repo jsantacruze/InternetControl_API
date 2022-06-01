@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+
 namespace business_layer.DTO
 {
     public class UsuarioDTO
@@ -8,6 +10,7 @@ namespace business_layer.DTO
         public bool? Activo { get; set; }
 
         public virtual EmpleadoDTO Empleado { get; set; }
+        public virtual List<UsuarioGrupoDTO> UsuarioGrupos { get; set; }
 
     }
 }
