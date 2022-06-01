@@ -57,8 +57,9 @@ namespace business_layer.IdentitySecurity
                 var rolesResult = await _userManager.GetRolesAsync(usuario);
                 var rolesList = new List<String>(rolesResult);
                 if(result.Succeeded){
-                    var userDesktop = _context.Usuarios.Select(u => u.UsuarioGrupos)
-                                        //.Include(ud => ud.UsuarioGrupos.Select(ug => ug.IdgrupoNavigation))
+                    var userDesktop = _context.Usuarios
+                                        .Include(ud => ud.CedulaEmpleado)
+                                        .Include(ud => ud.UsuarioGrupos)
                                         .FirstOrDefault(ud => ud.CedulaEmpleadoNavigation.StrEmail == usuario.Email);
                     var userDesktopDTO = _mapper.Map<Usuario, UsuarioDTO>(userDesktop);
                     return new UserDTO{
