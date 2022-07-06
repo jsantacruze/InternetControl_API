@@ -15,6 +15,38 @@ namespace business_layer.Suscripciones
 {
     public class ConsultasHelper
     {
+        //POR ID
+        public class SuscripcionQueryByIDRequest: IRequest<SuscripcionDTO>{
+            public long id {get; set;}
+        }
+
+        public class SuscripcionQueryByIDHandler: IRequestHandler<SuscripcionQueryByIDRequest, SuscripcionDTO> {
+
+            private readonly InternetControlContext _context;
+            private readonly IMapper _mapper;
+
+            public SuscripcionQueryByIDHandler(InternetControlContext context, IMapper mapper){
+                this._context = context;
+                this._mapper = mapper;
+            }
+
+            public async Task<SuscripcionDTO> Handle(SuscripcionQueryByIDRequest request, CancellationToken cancellationToken){
+                var suscripcionResult = await 
+                _context.Suscripcions
+                .Include(s => s.TipoSuscripcion)
+                .Include(s => s.IdpuntoAccesoNavigation)
+                .Include(s => s.CodigoSuscriptorNavigation)
+                .Include(s => s.TrackingSuscripcions)
+                .Include(s => s.ImagenSuscripcions)
+                .Include(s => s.StrIdsectorNavigation)
+                .Where(s => s.DblCodigoSuscripcion == request.id
+                        )
+                .FirstOrDefaultAsync();
+                var suscripcionDTO = _mapper.Map<Suscripcion, SuscripcionDTO>(suscripcionResult);
+                return suscripcionDTO;
+            }
+        }
+
         //POR FILTRO
         public class SuscripcionQueryListRequest: IRequest<List<SuscripcionDTO>>{
             public string Filtro {get; set;}

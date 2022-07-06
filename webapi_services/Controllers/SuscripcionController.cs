@@ -35,6 +35,12 @@ namespace webapi_services.Controllers
             return await Mediator.Send(request);
         }
 
+       [HttpPost]
+       [Route("id")]
+        public async Task<ActionResult<SuscripcionDTO>> GetByID(ConsultasHelper.SuscripcionQueryByIDRequest request)
+        {
+            return await Mediator.Send(request);
+        }
 
         [Route("updateCoordenadas")]
         [HttpPut]
