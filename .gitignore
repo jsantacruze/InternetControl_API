@@ -66,3 +66,11 @@ security_layer/obj/Debug/net5.0/security_layer.pdb
 security_layer/obj/Debug/net5.0/security_layer.pdb~bd0bbaa7605d60078b34c1c5cc4f6c0140fa4045
 security_layer/obj/Debug/net5.0/ref/security_layer.dll
 data_access/obj/Debug/net5.0/data_access.GeneratedMSBuildEditorConfig.editorconfig~dac0172183da8db29bd583496d1dbe083833ba50
+business_layer/obj/Debug/net5.0/business_layer.csproj.AssemblyReference.cache
+domain_layer/obj/Debug/net5.0/domain_layer.csproj.AssemblyReference.cache
+security_layer/obj/Debug/net5.0/security_layer.csproj.AssemblyReference.cache
+business_layer/obj/Debug/net5.0/business_layer.csproj.AssemblyReference.cache
+.gitignore
+.gitignore
+business_layer/obj/Debug/net5.0/business_layer.csproj.AssemblyReference.cache
+security_layer/obj/Debug/net5.0/security_layer.csproj.AssemblyReference.cache
