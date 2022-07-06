@@ -71,6 +71,9 @@ domain_layer/obj/Debug/net5.0/domain_layer.csproj.AssemblyReference.cache
 security_layer/obj/Debug/net5.0/security_layer.csproj.AssemblyReference.cache
 business_layer/obj/Debug/net5.0/business_layer.csproj.AssemblyReference.cache
 .gitignore
-.gitignore
 business_layer/obj/Debug/net5.0/business_layer.csproj.AssemblyReference.cache
 security_layer/obj/Debug/net5.0/security_layer.csproj.AssemblyReference.cache
+business_layer/obj/Debug/net5.0/business_layer.csproj.AssemblyReference.cache
+domain_layer/obj/Debug/net5.0/domain_layer.csproj.AssemblyReference.cache
+security_layer/obj/Debug/net5.0/security_layer.csproj.AssemblyReference.cache
+webapi_services/obj/Debug/net5.0/webapi_services.csproj.AssemblyReference.cache
