@@ -249,6 +249,7 @@ namespace business_layer.Suscripciones
             public string StrIdsucursal { get; set; }
             public int StrIdsector { get; set; }
             public double CodigoSuscriptor { get; set; }
+            public string MovilSuscriptor { get; set; }
             public bool Activo { get; set; }
             public string StrCedulaUsuarioCreador { get; set; }
             public double CostoInstalacion { get; set; }
@@ -336,7 +337,14 @@ namespace business_layer.Suscripciones
                 suscripcion.IdpuntoAcceso = request.IdpuntoAcceso;
                 suscripcion.TipoSuscripcionId = request.TipoSuscripcionId;
                 
+                var suscriptor = await _context.Suscriptors.FindAsync(request.CodigoSuscriptor);
+                if (suscriptor != null)
+                {
+                    suscriptor.StrMovil = request.MovilSuscriptor;
+                }
+
                 var resutl = await _context.SaveChangesAsync();
+
                 if(resutl > 0)
                 {
                     return Unit.Value;

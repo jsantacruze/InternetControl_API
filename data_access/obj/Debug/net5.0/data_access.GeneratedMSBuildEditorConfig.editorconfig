@@ -3,8 +3,12 @@ build_property.TargetFramework = net5.0
 build_property.TargetPlatformMinVersion = 
 build_property.UsingMicrosoftNETSdkWeb = 
 build_property.ProjectTypeGuids = 
-build_property.PublishSingleFile = 
-build_property.IncludeAllContentForSelfExtract = 
-build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = data_access
+<<<<<<< HEAD
 build_property.ProjectDir = E:\App\API\InternetControl_API\data_access\
+=======
+build_property.ProjectDir = C:\Mis Programas\MillenniumConnection\MillenniumConnection_App\MC_API_Rest\InternetControl_API\data_access\
+>>>>>>> 192a03dd5aa15ba3fbbdb5589895d235af8fdc32
